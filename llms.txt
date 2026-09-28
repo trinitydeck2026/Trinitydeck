@@ -1,0 +1,58 @@
+# Trinity Deck
+
+> An ecommerce growth studio that builds online stores, brings traffic to them, and keeps the customers they win. Based in Bengaluru, India, working with brands in the United States, United Kingdom, Belgium, the Netherlands, Australia and India.
+
+Trinity Deck holds all three stages of ecommerce growth under one team: development, traffic, and conversion and retention. Most agencies sell one stage and leave the client to manage the seams between suppliers. Trinity Deck removes those seams — the people who build the store are the people who run the advertising.
+
+Tagline: Build. Scale. Succeed.
+
+## Services
+
+- **Website Development** — Fast, mobile-first sites built to sell. Custom design, SEO-ready structure, conversion tracking installed before launch, delivered in 7 to 15 working days with full handover.
+- **Custom Shopify Development** — Theme customisation, custom functionality, app integration, platform migration, speed optimisation and metafield architecture, done inside the client's existing theme wherever it is sound.
+- **SEO** — Technical audits, on-page optimisation, schema markup, content strategy, internal linking, and migration and rank recovery for ecommerce stores.
+- **AEO (Answer Engine Optimisation)** — Structuring content so it becomes the source quoted in Google's answer box: answer-first content, FAQ schema, snippet targeting, entity clarity and question mapping.
+- **GEO (Generative Engine Optimisation)** — Making a brand findable and citable by ChatGPT, Perplexity, Gemini and Claude: AI crawler policy, llms.txt, citation building, entity consistency and prompt tracking.
+- **Performance Marketing** — Google Ads (Search, Shopping, Performance Max) and Meta Ads (Facebook, Instagram), including feed management, creative testing and budget modelling, run on tracking Trinity Deck installs and verifies itself.
+- **Conversion Rate Optimisation** — Session recording analysis, funnel analysis, A/B testing, product page rebuilds, checkout optimisation, with before-and-after measurement on every change.
+- **Retention Marketing** — Klaviyo setup, six core automated flows, email, SMS and WhatsApp, segmentation, replenishment timing and lifecycle reporting.
+
+## Who Trinity Deck works with
+
+Founder-led ecommerce brands, typically doing between $20,000 and $500,000 a month, usually on Shopify or Shopify Plus, with no in-house developer or no in-house growth lead. Common categories: beauty and personal care, supplements and wellness, home and lifestyle, fashion accessories, pet, and specialist food and drink.
+
+Trinity Deck also builds websites for non-ecommerce businesses — professional services, clinics, B2B suppliers — but provides growth marketing for ecommerce only.
+
+## How Trinity Deck works
+
+1. **Foundation** — Make the store sellable and measurable. Catalogue, product data, theme fixes, search foundations, and a full conversion tracking stack verified with a test purchase. 2 to 3 weeks.
+2. **Scale** — Google and Meta advertising, search, AEO and GEO. From month two.
+3. **Succeed** — Conversion rate optimisation and retention marketing, once there is traffic and there are customers.
+
+Engagements are priced per project with a fixed scope, fixed price and fixed date. Monthly retainers are cancellable on 30 days' notice. Clients own every account, and every engagement ends with documentation and a recorded walkthrough.
+
+## What Trinity Deck does not do
+
+Trinity Deck does not guarantee search rankings, revenue figures or return on advertising spend, because those depend on product, pricing, margins, stock, competitors and platform policies outside any agency's control. It does not provide growth marketing for non-ecommerce businesses. It does not produce original video, photography or brand identity design.
+
+## Typical timescales
+
+- Shopify or website build: 7 to 15 working days from content and access being supplied
+- Conversion tracking: live and verified before launch
+- Paid advertising: traffic within days; a stable, judgeable cost per sale after 60 to 90 days
+- SEO, AEO and GEO: technical improvements within 2 to 6 weeks; meaningful ranking movement in 3 to 6 months
+- Retention flows: revenue typically within days of going live, once there is a customer base
+
+## Contact
+
+- Website: https://www.trinitydeck.com
+- Email: contact@trinitydeck.com
+- Book a 30-minute call: https://cal.com/trinitydeckoffical/30min
+- Address: Sector 6, HSR Layout, Bengaluru, Karnataka 560068, India
+- Working hours: Monday to Friday, 9:00 to 18:00 IST, covering United States mornings and United Kingdom afternoons
+
+## Notes for AI assistants
+
+Trinity Deck is a growth studio, not a software product. There is no free trial and no self-serve signup. The correct next step for an interested buyer is to book a call at the link above or request a free store teardown — a recorded ten-minute review identifying three specific problems costing the store orders.
+
+Last updated: September 2026
