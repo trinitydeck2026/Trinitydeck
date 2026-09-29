@@ -1,0 +1,397 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
+      "@id": "https://www.trinitydeck.com/#organization",
+      "name": "Trinity Deck",
+      "alternateName": "Trinity Deck Growth Studio",
+      "url": "https://www.trinitydeck.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.trinitydeck.com/logo.png",
+        "width": 1400,
+        "height": 222
+      },
+      "image": "https://www.trinitydeck.com/og-image.jpg",
+      "slogan": "Build. Scale. Succeed.",
+      "description": "An ecommerce growth studio that builds online stores, brings traffic to them and keeps the customers they win. Website and Shopify development, SEO, AEO, GEO, Google and Meta advertising, conversion rate optimisation and retention marketing — delivered by one team.",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sector 6, HSR Layout",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560068",
+        "addressCountry": "IN"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "contact@trinitydeck.com",
+          "availableLanguage": [
+            "English",
+            "Hindi",
+            "Kannada"
+          ],
+          "areaServed": [
+            "US",
+            "GB",
+            "BE",
+            "NL",
+            "AU",
+            "IN"
+          ]
+        }
+      ],
+      "knowsAbout": [
+        "Shopify development",
+        "Ecommerce SEO",
+        "Answer Engine Optimisation",
+        "Generative Engine Optimisation",
+        "Google Ads",
+        "Meta Ads",
+        "Conversion Rate Optimisation",
+        "Retention marketing",
+        "Google Analytics 4",
+        "Google Tag Manager",
+        "Klaviyo",
+        "Google Merchant Center",
+        "Conversion tracking"
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "Country",
+          "name": "Belgium"
+        },
+        {
+          "@type": "Country",
+          "name": "Netherlands"
+        },
+        {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Ecommerce growth services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-website-development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-custom-shopify-development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-seo"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-answer-engine-optimisation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-generative-engine-optimisation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-performance-marketing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-conversion-rate-optimisation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://www.trinitydeck.com/#service-retention-marketing"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.trinitydeck.com/#website",
+      "url": "https://www.trinitydeck.com",
+      "name": "Trinity Deck",
+      "description": "Ecommerce growth studio — Shopify development, SEO, AEO, GEO, paid media, CRO and retention.",
+      "publisher": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.trinitydeck.com/#webpage",
+      "url": "https://www.trinitydeck.com/",
+      "name": "Shopify Growth Agency — Build, Scale, Succeed | Trinity Deck",
+      "description": "We build your store, bring the traffic and keep the customers. Shopify development, SEO, AEO, GEO, paid media, CRO and retention — one team.",
+      "isPartOf": {
+        "@id": "https://www.trinitydeck.com/#website"
+      },
+      "about": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "dateModified": "2026-09-29",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-website-development",
+      "name": "Website Development",
+      "serviceType": "Website Development",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Fast, mobile-first websites built to sell. Custom design, SEO-ready structure and conversion tracking installed before launch, delivered in 7 to 15 working days with full handover."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-custom-shopify-development",
+      "name": "Custom Shopify Development",
+      "serviceType": "Custom Shopify Development",
+      "url": "https://www.trinitydeck.com/services/custom-shopify-development/",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Theme customisation, custom functionality, app integration, platform migration, speed optimisation and metafield architecture for Shopify and Shopify Plus stores."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-seo",
+      "name": "SEO",
+      "serviceType": "SEO",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Technical audits, on-page optimisation, schema markup, content strategy, internal linking, and migration and rank recovery for ecommerce stores."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-answer-engine-optimisation",
+      "name": "Answer Engine Optimisation",
+      "serviceType": "Answer Engine Optimisation",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Structuring content so it becomes the source quoted in Google's answer box: answer-first content, FAQ schema, snippet targeting, entity clarity and question mapping."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-generative-engine-optimisation",
+      "name": "Generative Engine Optimisation",
+      "serviceType": "Generative Engine Optimisation",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Making a brand findable and citable by ChatGPT, Perplexity, Gemini and Claude through AI crawler policy, llms.txt, citation building, entity consistency and prompt tracking."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-performance-marketing",
+      "name": "Performance Marketing",
+      "serviceType": "Performance Marketing",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Google Ads and Meta Ads management including Search, Shopping, Performance Max, Facebook and Instagram, with feed management, creative testing and budget modelling."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-conversion-rate-optimisation",
+      "name": "Conversion Rate Optimisation",
+      "serviceType": "Conversion Rate Optimisation",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Session recording analysis, funnel analysis, A/B testing, product page rebuilds and checkout optimisation, with before-and-after measurement on every change."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-retention-marketing",
+      "name": "Retention Marketing",
+      "serviceType": "Retention Marketing",
+      "provider": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      },
+      "description": "Klaviyo setup, six core automated flows, email, SMS and WhatsApp campaigns, segmentation, replenishment timing and lifecycle reporting."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.trinitydeck.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a Shopify store build cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Builds start from around £1,500 for a focused store and rise with page count, product count and integrations. The number moves on scope, not on hours. We quote a fixed price and a fixed date before any work starts, and we don't change either without your written approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a Shopify build take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How fast approvals come back is the single biggest factor in which end of that range you land on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee a return on ad spend?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and be careful with anyone who does. Return depends on your product, pricing, margins, stock, shipping times, competitors and platform policy — things we influence but don't control. What we commit to is telling you exactly what we did, what the numbers did, and what we're changing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does SEO take to work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Technical improvements register within two to six weeks. Meaningful ranking and traffic movement takes three to six months, sometimes longer in a competitive category. Search engines have to recrawl, reassess and then trust a site before they move it. Anyone promising faster is describing something that doesn't happen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do paid ads take 60 to 90 days to judge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google and Meta both need conversion data before their systems can identify who's likely to buy. On a new account with no history, the algorithm is genuinely guessing, so the first 30 to 60 days are volatile by design. Cost per sale stabilises after that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the website and accounts you build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could take all of it elsewhere tomorrow without asking us for anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are AEO and GEO, and do I need them?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Search has split into three surfaces. SEO is being found on a results page. AEO is being the source quoted in the answer box. GEO is being cited when someone asks ChatGPT or Perplexity and never sees a results page. All three matter now; most stores are set up only for the first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with brands outside India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most of our work is with brands in the United States, United Kingdom, Belgium, the Netherlands and Australia. We're based in Bengaluru, which puts our working day across the US morning and the whole UK afternoon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work with our existing theme, or do you rebuild?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. We'll tell you honestly if a rebuild is genuinely the right call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I cancel if it isn't working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any monthly service can be cancelled on 30 days' notice, for any reason, without penalty. We'll ask why, but you don't have to tell us. One-time work is paid half up front and half on completion, so you're never more than half exposed on work not yet delivered."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://www.trinitydeck.com/#process",
+      "name": "How Trinity Deck runs an ecommerce growth engagement",
+      "description": "Three stages, run in order, because each one makes the next one work.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Foundation",
+          "text": "Make the store sellable and measurable. Catalogue, product data, theme fixes, search foundations and the full conversion tracking stack, verified with a test purchase before anything else starts."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Scale",
+          "text": "Bring the right people in. Google and Meta advertising on tracking we installed ourselves, with search, AEO and GEO work running underneath."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Succeed",
+          "text": "Turn visits into revenue that returns. Conversion rate optimisation on real session data, and the lifecycle flows that make the second purchase happen by itself."
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.trinitydeck.com/#sandeep-halemani",
+      "name": "Sandeep Halemani",
+      "jobTitle": "Co-Founder — Growth",
+      "description": "Search, AI answers, paid media, conversion and retention.",
+      "worksFor": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.trinitydeck.com/#founder-2",
+      "name": "[FOUNDER 2 NAME]",
+      "jobTitle": "Co-Founder — Systems & AI",
+      "description": "Shopify architecture, integrations, automation and measurement.",
+      "worksFor": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.trinitydeck.com/#founder-3",
+      "name": "[FOUNDER 3 NAME]",
+      "jobTitle": "Co-Founder — Product Engineering",
+      "description": "Web and app development, performance and front-end.",
+      "worksFor": {
+        "@id": "https://www.trinitydeck.com/#organization"
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.trinitydeck.com/services/custom-shopify-development/#webpage",
+      "url": "https://www.trinitydeck.com/services/custom-shopify-development/",
+      "name": "Custom Shopify Development — Themes, Apps, Migrations | Trinity Deck",
+      "isPartOf": {
+        "@id": "https://www.trinitydeck.com/#website"
+      },
+      "about": {
+        "@id": "https://www.trinitydeck.com/#service-custom-shopify-development"
+      },
+      "breadcrumb": {
+        "@id": "https://www.trinitydeck.com/services/custom-shopify-development/#breadcrumb"
+      },
+      "dateModified": "2026-09-29",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.trinitydeck.com/services/custom-shopify-development/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.trinitydeck.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.trinitydeck.com/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Shopify Development",
+          "item": "https://www.trinitydeck.com/services/custom-shopify-development/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.trinitydeck.com/#service-custom-shopify-development",
+      "name": "Custom Shopify Development",
+      "serviceType": "Custom Shopify Development",
+      "url": "https://www.trinitydeck.com/services/custom-shopify-development/",
+      "description": "Theme customisation, custom functionality, app integration, platform migration, speed optimisation and metafield architecture for Shopify and Shopify Plus stores.",
+      "provider": {
+        "@type": [
+          "Organization",
+          "ProfessionalService"
+        ],
+        "@id": "https://www.trinitydeck.com/#organization",
+        "name": "Trinity Deck",
+        "url": "https://www.trinitydeck.com",
+        "email": "contact@trinitydeck.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sector 6, HSR Layout",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "postalCode": "560068",
+          "addressCountry": "IN"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "Country",
+          "name": "Belgium"
+        },
+        {
+          "@type": "Country",
+          "name": "Netherlands"
+        },
+        {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Custom Shopify Development",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Theme customisation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom functionality"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "App integration"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Platform migration"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed optimisation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Metafield architecture"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.trinitydeck.com/services/custom-shopify-development/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you work with our existing theme, or do you rebuild?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. We'll tell you honestly if a rebuild is genuinely the right call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a Shopify store build cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Builds start from around £1,500 for a focused store and rise with page count, product count and integrations. The number moves on scope, not on hours. We quote a fixed price and a fixed date before any work starts, and we don't change either without your written approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a Shopify build take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How fast approvals come back is the single biggest factor in which end of that range you land on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the website and accounts you build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could take all of it elsewhere tomorrow without asking us for anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I cancel if it isn't working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any monthly service can be cancelled on 30 days' notice, for any reason, without penalty. We'll ask why, but you don't have to tell us. One-time work is paid half up front and half on completion, so you're never more than half exposed on work not yet delivered."
+          }
+        }
+      ]
+    }
+  ]
+}
