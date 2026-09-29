@@ -11,7 +11,7 @@ const DESC = "Theme customisation, custom functionality, app integration and mig
 
 export const metadata = {
   title: "Custom Shopify Development — Themes, Apps, Migrations | Trinity Deck",
-  description: "Theme customisation, custom functionality, app integration and migrations — done inside a theme that stays fast. Fixed price, fixed date, full handover.",
+  description: "Theme customisation, custom functionality, app integration and migrations — done inside a theme that stays fast. Fixed scope, fixed date, full handover.",
   alternates: { canonical: "/services/custom-shopify-development/" },
   openGraph: { type: "website", url: "/services/custom-shopify-development/", siteName: "Trinity Deck", title: TITLE, description: DESC, images: [{ url: "/og-image.jpg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image", title: TITLE, description: DESC, images: ["/og-image.jpg"] },
@@ -32,7 +32,7 @@ export default function CustomShopifyDevelopmentPage() {
             <Link href="/#services">Services</Link><svg className="ic"><use href="/assets/icons.svg#i-arrow-right"/></svg>
             <span aria-current="page">Custom Shopify Development</span>
           </nav>
-          <span className="badge badge--icon hero__badge load-in" style={{ '--ad': '.1s' }}><img src="/assets/img/mark-dark.webp" alt="" width="18" height="18" />Build · Service 02</span>
+          <span className="badge badge--icon hero__badge load-in" style={{ '--ad': '.1s' }}><img src="/assets/img/mark.webp" alt="" width="18" height="18" />Build · Service 02</span>
           <h1 className="h1 hero__title">
             <span className="rise"><span className="grad" style={{ '--ad': '.15s' }}>Custom Shopify</span></span>
             <span className="rise"><span style={{ '--ad': '.27s' }}><span className="grad">Development</span>
@@ -134,7 +134,7 @@ export default function CustomShopifyDevelopmentPage() {
               <h3>What every engagement includes</h3>
               <p>The same standard, whatever the size of the job.</p>
               <ul>
-                <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>A fixed price and a fixed date before any work starts</li>
+                <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>A written scope and fixed dates before any work starts</li>
                 <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Conversion tracking live and verified with a test purchase before launch</li>
                 <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Speed and mobile QA</li>
                 <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Every account in your name</li>
@@ -150,7 +150,7 @@ export default function CustomShopifyDevelopmentPage() {
                 <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-x"/></svg></span>Guarantee rankings, revenue or return on ad spend</li>
                 <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-x"/></svg></span>Lock anything to our email or our accounts</li>
                 <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-x"/></svg></span>Produce original video, photography or brand identity design</li>
-                <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-x"/></svg></span>Change the price or the date without your written approval</li>
+                <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-x"/></svg></span>Change the scope or the dates without your written approval</li>
               </ul>
             </article>
           </div>
@@ -174,8 +174,8 @@ export default function CustomShopifyDevelopmentPage() {
               <ol className="process__track" data-slider>
                 <li className="step" data-anim="left">
                   <span className="step__ic"><svg className="ic"><use href="/assets/icons.svg#i-search"/></svg></span>
-                  <h3 className="step__title">Teardown and quote</h3>
-                  <p className="step__body">We look at your store and tell you what we'd do first. Then a fixed scope, a fixed price and a fixed date — before any work starts.</p>
+                  <h3 className="step__title">Teardown and plan</h3>
+                  <p className="step__body">We look at your store and tell you what we'd do first. Then a written scope and fixed dates, agreed before any work starts.</p>
                   <div className="step__foot"><span className="chip-outline">Before we start</span><span className="step__num">01<span>/03</span></span></div>
                 </li>
                 <li className="step" data-anim="left" style={{ '--ad': '.1s' }}>
@@ -204,7 +204,7 @@ export default function CustomShopifyDevelopmentPage() {
             <div className="team__head">
               <span className="badge badge--dark" data-anim>Where this has been used</span>
               <h2 className="h2" id="related-h" data-anim style={{ '--ay': '50px', maxWidth: '820px' }}><span className="grad-light">A store that couldn't take a single order</span></h2>
-              <p className="team__sub" data-anim>Victoria's Bliss · Beauty · Belgium</p>
+              <p className="team__sub" data-anim>Beauty brand · Belgium</p>
             </div>
             <div className="split" style={{ marginTop: '56px' }}>
               <article className="member" data-anim style={{ '--ay': '40px' }}>
@@ -247,11 +247,11 @@ export default function CustomShopifyDevelopmentPage() {
             <h2 className="h2" id="faq-h" data-anim style={{ '--ay': '50px', maxWidth: '760px' }}><span className="grad">Things people ask</span> <span className="grad-v">before they call</span></h2>
           </div>
           <div className="faq" data-acc="single">
-            <div className="faq-item is-open" data-anim style={{ '--ay': '60px' }}><button className="faq-item__btn" type="button" aria-expanded="true"><h3>Can you work with our existing theme, or do you rebuild?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. We'll tell you honestly if a rebuild is genuinely the right call.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '65px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How much does a Shopify store build cost?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Builds start from around £1,500 for a focused store and rise with page count, product count and integrations. The number moves on scope, not on hours. We quote a fixed price and a fixed date before any work starts, and we don't change either without your written approval.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '70px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How long does a Shopify build take?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Most builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How fast approvals come back is the single biggest factor in which end of that range you land on.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Who owns the website and accounts you build?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could take all of it elsewhere tomorrow without asking us for anything.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How do I cancel if it isn't working?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Any monthly service can be cancelled on 30 days' notice, for any reason, without penalty. We'll ask why, but you don't have to tell us. One-time work is paid half up front and half on completion, so you're never more than half exposed on work not yet delivered.</p></div></div></div>
+          <div className="faq-item is-open" data-anim style={{ '--ay': '60px' }}><button className="faq-item__btn" type="button" aria-expanded="true"><h3>Can you work with my existing Shopify theme, or do you rebuild?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. If a rebuild is genuinely the right call, we'll tell you why.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '65px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How much does it cost to work with a Shopify growth agency?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>It depends on what your store needs, so we don't publish packages. After a free teardown we send a written scope listing the work, the order we'd do it in and the dates. Nothing starts until you approve it, and nothing in it changes without your written agreement.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '70px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How long does a Shopify store build take?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Most Shopify builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How quickly approvals come back is the biggest factor in which end of that range you land on.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Who owns the website, ad accounts and data you set up?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could move everything to another team tomorrow without asking us for anything.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Can I stop working with you at any time?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Yes. Ongoing work can be stopped with 30 days' notice, for any reason and without a penalty. We'll ask why, but you don't have to tell us. Project work is paid half up front and half on completion, so you're never far ahead of what you've received.</p></div></div></div>
           </div>
         </div>
       </section>

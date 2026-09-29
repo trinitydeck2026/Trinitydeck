@@ -2,10 +2,8 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import FounderLinks from "@/components/FounderLinks";
 import JsonLd from "@/components/JsonLd";
 import SiteEffects from "@/components/SiteEffects";
-import config from "@/lib/config";
 import schema from "@/data/schema-home.json";
 
 export const metadata = {
@@ -38,7 +36,7 @@ export default function HomePage() {
       <header className="frame hero" id="home">
         <div className="art-bg" aria-hidden="true"><div className="art-bg__mark"></div><div className="art-bg__grain"></div></div>
         <div className="hero__inner">
-          <span className="badge badge--icon hero__badge load-in" style={{ '--ad': '.1s' }}><img src="/assets/img/mark-dark.webp" alt="" width="18" height="18" />Ecommerce growth studio</span>
+          <span className="badge badge--icon hero__badge load-in" style={{ '--ad': '.1s' }}><img src="/assets/img/mark.webp" alt="" width="18" height="18" />Ecommerce growth studio</span>
           <h1 className="h1 hero__title">
             <span className="rise"><span className="grad" style={{ '--ad': '.15s' }}>We build your store, scale it,</span></span>
             <span className="rise"><span className="grad" style={{ '--ad': '.27s' }}>and keep the customers</span></span>
@@ -76,17 +74,17 @@ export default function HomePage() {
           </div>
 
           <div className="about__grid">
-            {/* Card 2 — Coverage (the reference's large "based in" card) */}
+            {/* Returning-visitor shortcut: people who already know Trinity Deck go straight to booking */}
             <article className="cov-card" data-anim style={{ '--ay': '60px' }}>
-              <span className="cov-card__chip"><span className="live-dot" aria-hidden="true"></span>Monday to Friday, 9:00 to 18:00 IST</span>
-              <h3 className="cov-card__title"><span className="accent">Bengaluru,</span> working your hours</h3>
-              <p className="cov-card__text">Our day covers the US morning and the whole UK afternoon. You get replies when you're at your desk, not overnight.</p>
-              <div className="clocks" aria-label="Current time in our working regions">
-                <div className="clock" data-tz="Asia/Kolkata"><small>Bengaluru</small><strong>--:--</strong></div>
-                <div className="clock" data-tz="Europe/London"><small>London</small><strong>--:--</strong></div>
-                <div className="clock" data-tz="America/New_York"><small>New York</small><strong>--:--</strong></div>
-              </div>
-              <a className="btn btn--light" href="#contact"><span className="btn__roll"><span>Free teardown</span><span aria-hidden="true">Free teardown</span></span></a>
+              <span className="cov-card__chip"><span className="live-dot" aria-hidden="true"></span>Already know Trinity Deck?</span>
+              <h3 className="cov-card__title">Skip the tour. <span className="accent">Book the call.</span></h3>
+              <p className="cov-card__text">If you've seen our work or talked to us before, you don't need the rest of this page. Pick a 30-minute slot and bring your store URL — we'll come prepared.</p>
+              <ul className="cov-card__points">
+                <li><svg className="ic"><use href="/assets/icons.svg#i-clock"/></svg>30 minutes</li>
+                <li><svg className="ic"><use href="/assets/icons.svg#i-eye"/></svg>Your store, on screen</li>
+                <li><svg className="ic"><use href="/assets/icons.svg#i-rocket"/></svg>A clear first step</li>
+              </ul>
+              <a className="btn btn--light" href="#contact"><span className="btn__roll"><span>Book a 30-minute call</span><span aria-hidden="true">Book a 30-minute call</span></span><svg className="ic ic--arrow"><use href="/assets/icons.svg#i-arrow-right"/></svg></a>
               <div className="globe" aria-hidden="true"><canvas id="globe"></canvas></div>
             </article>
 
@@ -97,7 +95,7 @@ export default function HomePage() {
                 <p className="info-card__text">The people who build your store are the people who run your ads. Nothing gets lost in a handover, because there isn't one.</p>
                 <div className="info-card__foot">
                   <div>
-                    <div className="info-card__label"><img src="/assets/img/mark-dark.webp" alt="" width="26" height="26" />One team, one contract</div>
+                    <div className="info-card__label"><img src="/assets/img/mark.webp" alt="" width="26" height="26" />One team, one contract</div>
                     <div className="stack-ic" aria-hidden="true">
                       <span><svg className="ic"><use href="/assets/icons.svg#i-code"/></svg></span>
                       <span><svg className="ic"><use href="/assets/icons.svg#i-search"/></svg></span>
@@ -112,7 +110,7 @@ export default function HomePage() {
               {/* The reference's testimonial card. Card 3 (client quote) stays out until it is real,
                    so this slot carries the closing lines of the About copy instead. */}
               <article className="info-card quote-card" data-anim style={{ '--ay': '60px', '--ad': '.2s' }}>
-                <div className="quote-card__visual"><img src="/assets/img/mark-dark.webp" alt="" width="100" height="100" loading="lazy" /></div>
+                <div className="quote-card__visual"><img src="/assets/img/mark.webp" alt="" width="100" height="100" loading="lazy" /></div>
                 <div>
                   <p className="quote-card__text">The work is rarely the problem. <em>The seams between the work are where the money goes.</em></p>
                   <p className="quote-card__text" style={{ marginTop: '12px' }}>We removed the seams. One team, one contract, one number to move.</p>
@@ -131,11 +129,11 @@ export default function HomePage() {
             <p className="strip__label" data-anim>Built on the platforms you already run</p>
             <div className="marquee" data-anim="fade">
               <div className="marquee__track">
-                <span className="logo-item"><svg className="c-shopify" aria-hidden="true"><use href="/assets/icons.svg#b-shopify"/></svg>Shopify</span>
-                <span className="logo-item"><svg className="c-gads" aria-hidden="true"><use href="/assets/icons.svg#b-googleads"/></svg>Google Ads</span>
-                <span className="logo-item"><svg className="c-meta" aria-hidden="true"><use href="/assets/icons.svg#b-meta"/></svg>Meta</span>
-                <span className="logo-item"><svg className="c-ga" aria-hidden="true"><use href="/assets/icons.svg#b-googleanalytics"/></svg>Google Analytics 4</span>
-                <span className="logo-item"><svg className="c-gtm" aria-hidden="true"><use href="/assets/icons.svg#b-googletagmanager"/></svg>Google Tag Manager</span>
+                <span className="logo-item"><svg className="c-shopify" aria-hidden="true"><use href="/assets/icons.svg#l-shopify"/></svg>Shopify</span>
+                <span className="logo-item"><svg className="c-gads" aria-hidden="true"><use href="/assets/icons.svg#l-googleads"/></svg>Google Ads</span>
+                <span className="logo-item"><svg className="c-meta" aria-hidden="true"><use href="/assets/icons.svg#l-meta"/></svg>Meta</span>
+                <span className="logo-item"><svg className="c-ga" aria-hidden="true"><use href="/assets/icons.svg#l-googleanalytics"/></svg>Google Analytics 4</span>
+                <span className="logo-item"><svg className="c-gtm" aria-hidden="true"><use href="/assets/icons.svg#l-googletagmanager"/></svg>Google Tag Manager</span>
                 <span className="logo-item"><svg className="c-klaviyo" aria-hidden="true"><use href="/assets/icons.svg#b-klaviyo"/></svg>Klaviyo</span>
                 <span className="logo-item"><svg className="c-merchant" aria-hidden="true"><use href="/assets/icons.svg#b-merchant"/></svg>Google Merchant Center</span>
                 <span className="logo-item"><svg className="c-clarity" aria-hidden="true"><use href="/assets/icons.svg#b-clarity"/></svg>Microsoft Clarity</span>
@@ -358,7 +356,7 @@ export default function HomePage() {
                 <div className="case__meta">
                   <div>
                     <h3 className="case__title">A store that couldn't take a single order</h3>
-                    <p className="case__client">Victoria's Bliss · Beauty · Belgium</p>
+                    <p className="case__client">Beauty brand · Belgium</p>
                   </div>
                   <div><p className="meta-label">Problem</p><p className="meta-text">128 product variants. Not one of them could be added to a basket. Google was told every item was out of stock, so nothing appeared in Shopping. The basket page still showed the theme's demo content in US dollars.</p></div>
                   <div><p className="meta-label">What we did</p><p className="meta-text">Supplier mapping and inventory sync, catalogue restructure across 58 products, theme fixes, the full tracking stack, structured data, and a corrected Merchant Center feed.</p></div>
@@ -395,7 +393,7 @@ export default function HomePage() {
                     <div className="case__slide">
                       <div className="mock mock--dark">
                         <div className="chat">
-                          <div className="chat__head"><span><svg className="ic"><use href="/assets/icons.svg#b-whatsapp"/></svg></span>Ordering agent</div>
+                          <div className="chat__head"><span><svg className="ic"><use href="/assets/icons.svg#l-whatsapp"/></svg></span>Ordering agent</div>
                           <div className="chat__msgs">
                             <div className="msg msg--in">Same as last week?</div>
                             <div className="msg msg--out">Yes — reorder, please.</div>
@@ -409,7 +407,7 @@ export default function HomePage() {
                       <div className="mock mock--grey">
                         <div className="listings">
                           <div className="listing"><span><svg className="ic"><use href="/assets/icons.svg#i-store"/></svg></span><div>IndiaMART<small>Listed</small></div></div>
-                          <div className="listing"><span><svg className="ic"><use href="/assets/icons.svg#b-google"/></svg></span><div>Google Business Profile<small>Listed</small></div></div>
+                          <div className="listing"><span><svg className="ic"><use href="/assets/icons.svg#l-google"/></svg></span><div>Google Business Profile<small>Listed</small></div></div>
                           <div className="listing"><span><svg className="ic"><use href="/assets/icons.svg#i-globe"/></svg></span><div>TradeIndia<small>Listed</small></div></div>
                           <div className="listing"><span><svg className="ic"><use href="/assets/icons.svg#i-map-pin"/></svg></span><div>JustDial<small>Listed</small></div></div>
                         </div>
@@ -423,7 +421,7 @@ export default function HomePage() {
                 <div className="case__meta">
                   <div>
                     <h3 className="case__title">A supplier nobody could find</h3>
-                    <p className="case__client">Savi Ruchi &amp; Co. · B2B food manufacturing · India</p>
+                    <p className="case__client">B2B food manufacturer · India</p>
                   </div>
                   <div><p className="meta-label">Problem</p><p className="meta-text">Frozen masala pastes supplied to named restaurants across three cities, with no catalogue, no pack weights, no shelf life published anywhere, and no Google listing at all. Every enquiry needed a phone call before a buyer could learn anything.</p></div>
                   <div><p className="meta-label">What we did</p><p className="meta-text">A B2B supplier site with a full product catalogue and a cost-per-plate calculator, a WhatsApp ordering agent with reorder automation, and listings across IndiaMART, Google Business Profile, TradeIndia and JustDial.</p></div>
@@ -439,7 +437,6 @@ export default function HomePage() {
                 </div>
               </article>
             </div>
-            <p className="work__note" data-anim>Earlier work lives in our founders' portfolios — <a href="#team">meet them below</a>.</p>
           </div>
         </section>
 
@@ -495,7 +492,7 @@ export default function HomePage() {
                 <div className="bento__art">
                   <div className="chips-stack" style={{ justifySelf: 'start' }}>
                     <div className="chip-row"><span className="ghost-pill"></span><span className="pill pill--light"><svg className="ic"><use href="/assets/icons.svg#i-clipboard-check"/></svg>Fixed scope</span></div>
-                    <div className="chip-row"><span className="ghost-pill"></span><span className="pill pill--light"><svg className="ic"><use href="/assets/icons.svg#i-tag"/></svg>Fixed price</span></div>
+                    <div className="chip-row"><span className="ghost-pill"></span><span className="pill pill--light"><svg className="ic"><use href="/assets/icons.svg#i-key-round"/></svg>Full handover</span></div>
                     <div className="chip-row"><span className="ghost-pill"></span><span className="pill pill--light"><svg className="ic"><use href="/assets/icons.svg#i-calendar"/></svg>Fixed date</span></div>
                   </div>
                   <div className="week-bar" aria-hidden="true">
@@ -504,14 +501,14 @@ export default function HomePage() {
                   </div>
                 </div>
                 <h3 className="bento__title">We ship in weeks, not quarters</h3>
-                <p className="bento__text">Fixed scope, fixed price, fixed date. Most builds land in seven to fifteen working days. Quarters are where ideas go to die — and where retainers quietly become subscriptions.</p>
+                <p className="bento__text">Fixed scope, fixed date, full handover. Most builds land in seven to fifteen working days. Quarters are where ideas go to die — and where retainers quietly become subscriptions.</p>
               </article>
               <article className="bento__card" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}>
                 <div className="bento__art">
                   <div className="tiles">
-                    <span className="tile"><svg className="c-gtm"><use href="/assets/icons.svg#b-googletagmanager"/></svg><span className="tile__ok"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span></span>
-                    <span className="tile tile--big"><svg className="c-ga"><use href="/assets/icons.svg#b-googleanalytics"/></svg><span className="tile__ok"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span></span>
-                    <span className="tile"><svg className="c-meta"><use href="/assets/icons.svg#b-meta"/></svg><span className="tile__ok"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span></span>
+                    <span className="tile"><svg className="c-gtm"><use href="/assets/icons.svg#l-googletagmanager"/></svg><span className="tile__ok"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span></span>
+                    <span className="tile tile--big"><svg className="c-ga"><use href="/assets/icons.svg#l-googleanalytics"/></svg><span className="tile__ok"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span></span>
+                    <span className="tile"><svg className="c-meta"><use href="/assets/icons.svg#l-meta"/></svg><span className="tile__ok"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span></span>
                   </div>
                 </div>
                 <h3 className="bento__title">Nothing launches with broken tracking</h3>
@@ -520,8 +517,8 @@ export default function HomePage() {
               <article className="bento__card" data-anim style={{ '--ay': '30px' }}>
                 <div className="bento__art">
                   <div className="owner">
-                    <div className="owner-row"><span><svg className="ic"><use href="/assets/icons.svg#b-shopify"/></svg></span><b>Store</b><small>Your name</small></div>
-                    <div className="owner-row"><span><svg className="ic"><use href="/assets/icons.svg#b-googleads"/></svg></span><b>Ad accounts</b><small>Your name</small></div>
+                    <div className="owner-row"><span><svg className="ic"><use href="/assets/icons.svg#l-shopify"/></svg></span><b>Store</b><small>Your name</small></div>
+                    <div className="owner-row"><span><svg className="ic"><use href="/assets/icons.svg#l-googleads"/></svg></span><b>Ad accounts</b><small>Your name</small></div>
                     <div className="owner-row"><span><svg className="ic"><use href="/assets/icons.svg#i-file-text"/></svg></span><b>Documentation</b><small>Yours</small></div>
                   </div>
                 </div>
@@ -548,22 +545,23 @@ export default function HomePage() {
           <div className="container">
             <div className="section-head section-head--center">
               <span className="badge" data-anim>Everything in one place</span>
-              <h2 className="h2" id="all-h" data-anim style={{ '--ay': '50px', maxWidth: '820px' }}><span className="grad">One team instead</span> <span className="grad-v">of three suppliers</span></h2>
+              <h2 className="h2" id="all-h" data-anim style={{ '--ay': '50px', maxWidth: '860px' }}><span className="grad">Every lever of growth,</span> <span className="grad-v">run by one team</span></h2>
+              <p className="section-head__intro" data-anim>Most stores stall because each lever is pulled by a different supplier. We run them in the right order, on the same data, towards one number.</p>
             </div>
             <div className="hub" data-hub>
               <svg className="hub__lines" aria-hidden="true"></svg>
               <div className="hub__col">
-                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '20px' }}><span className="hub__ic" data-anim="pop"><svg className="ic"><use href="/assets/icons.svg#i-users"/></svg></span><h3 className="hub__title">One team, no handoffs</h3><p className="hub__text">The people who build it run it. Nothing gets lost between suppliers, because there's only one.</p></article>
-                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '30px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.1s' }}><svg className="ic"><use href="/assets/icons.svg#i-gauge"/></svg></span><h3 className="hub__title">Measurement before marketing</h3><p className="hub__text">Tracking goes in first and gets verified with a real test purchase. Then we spend money.</p></article>
-                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '40px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.2s' }}><svg className="ic"><use href="/assets/icons.svg#i-search"/></svg></span><h3 className="hub__title">All three search surfaces</h3><p className="hub__text">Google results, the answer box, and AI assistants. Most stores are set up for the first one only.</p></article>
+                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '20px' }}><span className="hub__ic" data-anim="pop"><svg className="ic"><use href="/assets/icons.svg#i-bar-chart-3"/></svg></span><h3 className="hub__title">We start from your numbers</h3><p className="hub__text">Before we change anything, we read your analytics, search data and session recordings. Every recommendation arrives with the evidence behind it.</p></article>
+                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '30px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.1s' }}><svg className="ic"><use href="/assets/icons.svg#i-gauge"/></svg></span><h3 className="hub__title">Tracking you can trust</h3><p className="hub__text">Seven tracking platforms installed and verified with a real test purchase before any ad spend. Every decision after that is made on accurate data.</p></article>
+                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '40px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.2s' }}><svg className="ic"><use href="/assets/icons.svg#i-search"/></svg></span><h3 className="hub__title">Found everywhere buyers look</h3><p className="hub__text">SEO, AEO and GEO run together, so your store shows up whether a buyer searches Google, reads the answer box or asks ChatGPT.</p></article>
               </div>
               <div className="hub__center">
-                <div className="hub__node" data-hub-node data-anim="pop"><img src="/assets/img/mark-dark.webp" alt="" width="74" height="74" loading="lazy" />Trinity Deck</div>
+                <div className="hub__node" data-hub-node data-anim="pop"><img src="/assets/img/mark.webp" alt="" width="74" height="74" loading="lazy" />Trinity Deck</div>
               </div>
               <div className="hub__col hub__col--right">
-                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '20px' }}><span className="hub__ic" data-anim="pop"><svg className="ic"><use href="/assets/icons.svg#i-key-round"/></svg></span><h3 className="hub__title">Built to be handed over</h3><p className="hub__text">Documented, walked through, and entirely in your name from day one.</p></article>
-                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '30px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.1s' }}><svg className="ic"><use href="/assets/icons.svg#i-file-text"/></svg></span><h3 className="hub__title">Plain-English reporting</h3><p className="hub__text">One page a month: the number that changed, why it changed, what we're doing next.</p></article>
-                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '40px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.2s' }}><svg className="ic"><use href="/assets/icons.svg#i-shield-check"/></svg></span><h3 className="hub__title">Honest about the limits</h3><p className="hub__text">We don't guarantee rankings, revenue or ROAS. Nobody can, and the people who do are counting on you not reading the exit clause.</p></article>
+                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '20px' }}><span className="hub__ic" data-anim="pop"><svg className="ic"><use href="/assets/icons.svg#i-target"/></svg></span><h3 className="hub__title">Ads on a store that converts</h3><p className="hub__text">We fix the pages that lose sales first, then scale Google and Meta on a store ready for the traffic. Spend goes further when fewer visitors leave.</p></article>
+                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '30px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.1s' }}><svg className="ic"><use href="/assets/icons.svg#i-trending-up"/></svg></span><h3 className="hub__title">Every change is measured</h3><p className="hub__text">Conversion changes ship one at a time with before-and-after numbers, so you know exactly which change moved revenue and which didn't.</p></article>
+                <article className="hub__card" data-hub-card data-anim style={{ '--ay': '40px' }}><span className="hub__ic" data-anim="pop" style={{ '--ad': '.2s' }}><svg className="ic"><use href="/assets/icons.svg#i-repeat"/></svg></span><h3 className="hub__title">Customers who come back</h3><p className="hub__text">Klaviyo flows across email, SMS and WhatsApp turn first orders into repeat orders, without anyone on your team pressing send.</p></article>
               </div>
             </div>
           </div>
@@ -575,12 +573,12 @@ export default function HomePage() {
 
         <div className="container">
           <div className="tools__stage">
-            <div className="float-tile" style={{ left: '2%', top: '4%', '--rot': '-18deg', '--bd': '-1s' }} data-depth="30"><div><svg className="c-shopify"><use href="/assets/icons.svg#b-shopify"/></svg></div></div>
+            <div className="float-tile" style={{ left: '2%', top: '4%', '--rot': '-18deg', '--bd': '-1s' }} data-depth="30"><div><svg className="c-shopify"><use href="/assets/icons.svg#l-shopify"/></svg></div></div>
             <div className="float-tile float-tile--sm" style={{ left: '-3%', top: '44%', '--rot': '12deg', '--bd': '-3s' }} data-depth="18"><div><svg className="c-klaviyo"><use href="/assets/icons.svg#b-klaviyo"/></svg></div></div>
-            <div className="float-tile" style={{ left: '9%', top: '74%', '--rot': '-10deg', '--bd': '-5s' }} data-depth="24"><div><svg className="c-ga"><use href="/assets/icons.svg#b-googleanalytics"/></svg></div></div>
-            <div className="float-tile float-tile--sm" style={{ right: '4%', top: '10%', '--rot': '14deg', '--bd': '-2s' }} data-depth="22"><div><svg className="c-meta"><use href="/assets/icons.svg#b-meta"/></svg></div></div>
-            <div className="float-tile float-tile--sm" style={{ right: '-2%', top: '48%', '--rot': '-12deg', '--bd': '-4s' }} data-depth="16"><div><svg className="c-gads"><use href="/assets/icons.svg#b-googleads"/></svg></div></div>
-            <div className="float-tile" style={{ right: '8%', top: '76%', '--rot': '20deg', '--bd': '-6s' }} data-depth="28"><div><svg className="c-wa"><use href="/assets/icons.svg#b-whatsapp"/></svg></div></div>
+            <div className="float-tile" style={{ left: '9%', top: '74%', '--rot': '-10deg', '--bd': '-5s' }} data-depth="24"><div><svg className="c-ga"><use href="/assets/icons.svg#l-googleanalytics"/></svg></div></div>
+            <div className="float-tile float-tile--sm" style={{ right: '4%', top: '10%', '--rot': '14deg', '--bd': '-2s' }} data-depth="22"><div><svg className="c-meta"><use href="/assets/icons.svg#l-meta"/></svg></div></div>
+            <div className="float-tile float-tile--sm" style={{ right: '-2%', top: '48%', '--rot': '-12deg', '--bd': '-4s' }} data-depth="16"><div><svg className="c-gads"><use href="/assets/icons.svg#l-googleads"/></svg></div></div>
+            <div className="float-tile" style={{ right: '8%', top: '76%', '--rot': '20deg', '--bd': '-6s' }} data-depth="28"><div><svg className="c-wa"><use href="/assets/icons.svg#l-whatsapp"/></svg></div></div>
           <div className="tools__head">
             <span className="badge" data-anim>The stack</span>
             <h2 className="h2" id="tools-h" data-anim style={{ '--ay': '50px' }}><span className="grad">The tools we work in</span> <span className="grad-v">every day</span></h2>
@@ -589,16 +587,16 @@ export default function HomePage() {
           </div>
           </div>
           <ul className="tool-grid">
-            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg className="c-shopify"><use href="/assets/icons.svg#b-shopify"/></svg></span><div><b>Shopify</b><small>Store builds, themes, migrations</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg className="c-gads"><use href="/assets/icons.svg#b-googleads"/></svg></span><div><b>Google Ads</b><small>Search, Shopping and Performance Max</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}><span className="tool__ic"><svg className="c-meta"><use href="/assets/icons.svg#b-meta"/></svg></span><div><b>Meta Ads</b><small>Facebook and Instagram</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg className="c-shopify"><use href="/assets/icons.svg#l-shopify"/></svg></span><div><b>Shopify</b><small>Store builds, themes, migrations</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg className="c-gads"><use href="/assets/icons.svg#l-googleads"/></svg></span><div><b>Google Ads</b><small>Search, Shopping and Performance Max</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}><span className="tool__ic"><svg className="c-meta"><use href="/assets/icons.svg#l-meta"/></svg></span><div><b>Meta Ads</b><small>Facebook and Instagram</small></div></li>
             <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.15s' }}><span className="tool__ic"><svg className="c-merchant"><use href="/assets/icons.svg#b-merchant"/></svg></span><div><b>Google Merchant Center</b><small>Product feeds and free listings</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg className="c-ga"><use href="/assets/icons.svg#b-googleanalytics"/></svg></span><div><b>Google Analytics 4</b><small>Ecommerce events and reporting</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg className="c-gtm"><use href="/assets/icons.svg#b-googletagmanager"/></svg></span><div><b>Google Tag Manager</b><small>Tag management and server-side</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg className="c-gsc"><use href="/assets/icons.svg#b-googlesearchconsole"/></svg></span><div><b>Google Search Console</b><small>Indexing and search performance</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg className="c-ga"><use href="/assets/icons.svg#l-googleanalytics"/></svg></span><div><b>Google Analytics 4</b><small>Ecommerce events and reporting</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg className="c-gtm"><use href="/assets/icons.svg#l-googletagmanager"/></svg></span><div><b>Google Tag Manager</b><small>Tag management and server-side</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg className="c-gsc"><use href="/assets/icons.svg#l-googlesearchconsole"/></svg></span><div><b>Google Search Console</b><small>Indexing and search performance</small></div></li>
             <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}><span className="tool__ic"><svg className="c-clarity"><use href="/assets/icons.svg#b-clarity"/></svg></span><div><b>Microsoft Clarity</b><small>Session recordings and heatmaps</small></div></li>
             <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.15s' }}><span className="tool__ic"><svg className="c-klaviyo"><use href="/assets/icons.svg#b-klaviyo"/></svg></span><div><b>Klaviyo</b><small>Email and SMS lifecycle flows</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg className="c-wa"><use href="/assets/icons.svg#b-whatsapp"/></svg></span><div><b>WhatsApp Business</b><small>Ordering agents and conversational commerce</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg className="c-wa"><use href="/assets/icons.svg#l-whatsapp"/></svg></span><div><b>WhatsApp Business</b><small>Ordering agents and conversational commerce</small></div></li>
           </ul>
         </div>
       </section>
@@ -608,38 +606,45 @@ export default function HomePage() {
         <div className="spot" aria-hidden="true"></div>
 
         {/* ============ TEAM ============ */}
-        <section className="team" id="team" aria-labelledby="team-h">
+        <section className="team" id="next-steps" aria-labelledby="team-h">
           <div className="container">
             <div className="team__head">
-              <span className="badge badge--dark" data-anim>Who you'll work with</span>
-              <h2 className="h2" id="team-h" data-anim style={{ '--ay': '50px', maxWidth: '820px' }}><span className="grad-light">You'll be talking to the people doing the work</span></h2>
-              <p className="team__sub" data-anim>There's no account manager to talk to instead. When you ask why a number moved, you're asking the person who moved it.</p>
+              <span className="badge badge--dark" data-anim>What happens next</span>
+              <h2 className="h2" id="team-h" data-anim style={{ '--ay': '50px', maxWidth: '820px' }}><span className="grad-light">From one call to a store that sells</span></h2>
+              <p className="team__sub" data-anim>No long onboarding and no sales deck. This is exactly what happens after you book.</p>
             </div>
             <div className="team__grid">
-              <article className="member member--lead" data-anim style={{ '--ay': '40px' }}>
-                <div className="avatar avatar--lg" data-photo="sandeep"><span>SH</span><img className="avatar__mark" src="/assets/img/mark-dark.webp" alt="" loading="lazy" /></div>
-                <h3 className="member__name">Sandeep Halemani</h3>
-                <p className="member__role">Co-Founder — Growth</p>
-                <p className="member__bio">Search, AI answers, paid media, conversion and retention. Writes the diagnosis you get on the first call, and the monthly report that says what actually happened.</p>
-                <FounderLinks links={config.founders.sandeep} name="Sandeep Halemani" />
+              <article className="member member--lead step-card" data-anim style={{ '--ay': '40px' }}>
+                <div className="step-card__visual" aria-hidden="true">
+                  <span className="step-card__num">01</span>
+                  <div className="step-card__rec"><span className="live-dot"></span>Recording · 10 min</div>
+                  <ul className="step-card__list">
+                    <li><span>1</span>Problem costing you orders</li>
+                    <li><span>2</span>Problem costing you orders</li>
+                    <li><span>3</span>Problem costing you orders</li>
+                    <li className="is-free"><span><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>One fix you can make yourself</li>
+                  </ul>
+                </div>
+                <h3 className="member__name">A free teardown of your store</h3>
+                <p className="member__role">Yours to keep, whether we work together or not</p>
+                <p className="member__bio">We record a ten-minute review of your store: three specific things costing you orders, and one you can fix yourself without us.</p>
+                <a className="btn btn--light step-card__cta" href="#contact"><span className="btn__roll"><span>Get my free teardown</span><span aria-hidden="true">Get my free teardown</span></span><svg className="ic ic--arrow"><use href="/assets/icons.svg#i-arrow-right"/></svg></a>
               </article>
               <div className="team__right">
-                <article className="member member--row" data-anim style={{ '--ay': '40px', '--ad': '.1s' }}>
-                  <div className="avatar avatar--sm" data-photo="founder2"><span>F2</span></div>
+                <article className="member member--row step-card" data-anim style={{ '--ay': '40px', '--ad': '.1s' }}>
+                  <div className="step-card__ic" aria-hidden="true"><svg className="ic"><use href="/assets/icons.svg#i-clipboard-check"/></svg><span>02</span></div>
                   <div>
-                    <h3 className="member__name">[FOUNDER 2 NAME]</h3>
-                    <p className="member__role">Co-Founder — Systems &amp; AI</p>
-                    <p className="member__bio">Shopify architecture, integrations, automation, and the measurement everything else depends on. If your numbers have never quite matched, this is who finds out why.</p>
-                    <FounderLinks links={config.founders.founder2} name="[FOUNDER 2 NAME]" />
+                    <h3 className="member__name">A written plan before any work</h3>
+                    <p className="member__role">Scope, order and dates agreed up front</p>
+                    <p className="member__bio">You see exactly what we'll do, in what order and by when. Nothing starts until you've approved it in writing, and nothing changes without your say.</p>
                   </div>
                 </article>
-                <article className="member member--row" data-anim style={{ '--ay': '40px', '--ad': '.2s' }}>
-                  <div className="avatar avatar--sm" data-photo="founder3"><span>F3</span></div>
+                <article className="member member--row step-card" data-anim style={{ '--ay': '40px', '--ad': '.2s' }}>
+                  <div className="step-card__ic" aria-hidden="true"><svg className="ic"><use href="/assets/icons.svg#i-rocket"/></svg><span>03</span></div>
                   <div>
-                    <h3 className="member__name">[FOUNDER 3 NAME]</h3>
-                    <p className="member__role">Co-Founder — Product Engineering</p>
-                    <p className="member__bio">Web and app development, performance, and the front end your customers actually touch. Builds the thing, then makes it fast.</p>
-                    <FounderLinks links={config.founders.founder3} name="[FOUNDER 3 NAME]" />
+                    <h3 className="member__name">Your foundation live in 2–3 weeks</h3>
+                    <p className="member__role">Then we scale what's working</p>
+                    <p className="member__bio">Catalogue, speed and tracking fixed first and verified with a test purchase. Every rupee, pound or dollar you spend after that is measured.</p>
                   </div>
                 </article>
               </div>
@@ -686,57 +691,49 @@ export default function HomePage() {
         </section>
       </div>
 
-      {/* ============================ PRICING ============================ */}
-      <section className="section" id="pricing" aria-labelledby="pricing-h">
+      {/* ============================ ENGAGEMENT ============================ */}
+      <section className="section" id="engagement" aria-labelledby="engagement-h">
         <div className="container">
           <div className="pricing__head">
             <span className="badge" data-anim>How engagements work</span>
-            <h2 className="h2" id="pricing-h" data-anim style={{ '--ay': '50px' }}><span className="grad">Two ways</span> <span className="grad-v">to work with us</span></h2>
-            <p className="pricing__intro" data-anim>We price per project, not per hour, and we quote a fixed number before any work starts. What it costs depends on what you need — so tell us and we'll tell you.</p>
+            <h2 className="h2" id="engagement-h" data-anim style={{ '--ay': '50px' }}><span className="grad">One engagement,</span> <span className="grad-v">built around your store</span></h2>
+            <p className="pricing__intro" data-anim>We don't sell packages or plans. Every engagement is scoped to what your store actually needs, so you never pay for work you don't need and never miss work you do.</p>
           </div>
-          <div className="plans">
-            <article className="plan" data-anim style={{ '--ay': '50px' }}>
-              <p className="plan__tag"><svg className="ic"><use href="/assets/icons.svg#i-layers"/></svg>Build Sprint <i></i><small>One-time</small></p>
-              <div className="plan__price">
-                <p className="plan__big">Fixed quote<small>/ project</small></p>
-                <a className="btn btn--dark" href="#contact"><span className="btn__roll"><span>Get a quote</span><span aria-hidden="true">Get a quote</span></span><svg className="ic ic--arrow"><use href="/assets/icons.svg#i-arrow-right"/></svg></a>
+          <div className="engage">
+            <div className="engage__grid">
+              <div className="engage__col" data-anim style={{ '--ay': '40px', '--ad': '0s' }}>
+                <p className="engage__pillar"><span><svg className="ic"><use href="/assets/icons.svg#i-layers"/></svg></span>Build</p>
+                <h3 className="engage__head">A store that sells and measures</h3>
+                <ul className="plan__list"><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Website and Shopify builds</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Custom Shopify development</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Store catalogue and product data</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Platform migration</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Speed and mobile optimisation</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Conversion tracking setup</li></ul>
               </div>
-              <div className="plan__body">
-                <div className="plan__for"><b>Who it's for</b><p>Stores that need to exist, work, or be fixed before anything else makes sense</p></div>
-                <ul className="plan__list" aria-label="What's included">
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Website or Shopify build</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Catalogue and product data</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Theme development</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>SEO, AEO and GEO foundation</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Full conversion tracking stack</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Structured data</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Speed and mobile QA</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Documented handover and recorded walkthrough</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>14 days post-launch support</li>
+              <div className="engage__col" data-anim style={{ '--ay': '40px', '--ad': '.08s' }}>
+                <p className="engage__pillar"><span><svg className="ic"><use href="/assets/icons.svg#i-rocket"/></svg></span>Scale</p>
+                <h3 className="engage__head">The right people finding it</h3>
+                <ul className="plan__list"><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>SEO: technical and content</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>AEO: the answer box</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>GEO: AI assistants</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Google Search, Shopping and PMax</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Meta and Instagram ads</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Product feed management</li></ul>
+              </div>
+              <div className="engage__col" data-anim style={{ '--ay': '40px', '--ad': '.16s' }}>
+                <p className="engage__pillar"><span><svg className="ic"><use href="/assets/icons.svg#i-repeat"/></svg></span>Succeed</p>
+                <h3 className="engage__head">Visitors who buy and come back</h3>
+                <ul className="plan__list"><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Conversion rate optimisation</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>A/B tests and page rebuilds</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Klaviyo email and SMS flows</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>WhatsApp campaigns</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Segmentation and lifecycle reporting</li><li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Monthly report and strategy call</li></ul>
+              </div>
+            </div>
+            <div className="engage__foot" data-anim style={{ '--ay': '40px' }}>
+              <div className="engage__ask">
+                <p className="engage__ask-title">Need something that isn't listed?</p>
+                <p className="engage__ask-text">Ask. Catalogue setup, one-off fixes, integrations and anything else your store needs are scoped the same way. Start with one service or all of them.</p>
+                <ul className="engage__promises">
+                  <li><svg className="ic"><use href="/assets/icons.svg#i-clipboard-check"/></svg>Scope agreed in writing before work starts</li>
+                  <li><svg className="ic"><use href="/assets/icons.svg#i-key-round"/></svg>Every account in your name</li>
+                  <li><svg className="ic"><use href="/assets/icons.svg#i-calendar"/></svg>Ongoing work stops on 30 days' notice</li>
                 </ul>
               </div>
-            </article>
-            <article className="plan plan--dark" data-anim style={{ '--ay': '60px', '--ad': '.1s' }}>
-              <p className="plan__tag"><svg className="ic"><use href="/assets/icons.svg#i-rocket"/></svg>Growth Retainer <i></i><small>Monthly</small></p>
-              <div className="plan__price">
-                <p className="plan__big">Monthly<small>/ 30 days' notice</small></p>
-                <a className="btn btn--dark" href="#contact"><span className="btn__roll"><span>Talk to us</span><span aria-hidden="true">Talk to us</span></span><svg className="ic ic--arrow"><use href="/assets/icons.svg#i-arrow-right"/></svg></a>
+              <div className="engage__cta">
+                <a className="btn btn--dark" href="#contact"><span className="btn__roll"><span>Get your free teardown</span><span aria-hidden="true">Get your free teardown</span></span><svg className="ic ic--arrow"><use href="/assets/icons.svg#i-arrow-right"/></svg></a>
+                <p className="engage__small">Free, no obligation. <Link href="/terms/">Terms apply</Link>.</p>
               </div>
-              <div className="plan__body">
-                <div className="plan__for"><b>Who it's for</b><p>Stores that work and now need more of the right people finding them</p></div>
-                <ul className="plan__list" aria-label="What's included">
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Google and Meta management</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Search, AEO and GEO</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Conversion rate optimisation</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Retention marketing</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Creative production</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Monthly report and strategy call</li>
-                  <li><span className="tick"><svg className="ic"><use href="/assets/icons.svg#i-check"/></svg></span>Cancellable on 30 days' notice, any reason</li>
-                </ul>
-              </div>
-            </article>
+            </div>
           </div>
-          <p className="pricing__line" data-anim>Not sure which you need? That's what the <a href="#contact">free teardown</a> is for. We'll look at your store and tell you which of these would actually help — including if the answer is neither.</p>
+          <p className="pricing__line" data-anim>Not sure what you need? That's what the <a href="#contact">free teardown</a> is for. We'll look at your store and tell you what would actually help — including if the answer is nothing.</p>
         </div>
       </section>
 
@@ -748,16 +745,18 @@ export default function HomePage() {
             <h2 className="h2" id="faq-h" data-anim style={{ '--ay': '50px', maxWidth: '760px' }}><span className="grad">Things people ask</span> <span className="grad-v">before they call</span></h2>
           </div>
           <div className="faq" data-acc="single">
-            <div className="faq-item is-open" data-anim style={{ '--ay': '60px' }}><button className="faq-item__btn" type="button" aria-expanded="true"><h3>How much does a Shopify store build cost?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Builds start from around £1,500 for a focused store and rise with page count, product count and integrations. The number moves on scope, not on hours. We quote a fixed price and a fixed date before any work starts, and we don't change either without your written approval.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '65px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How long does a Shopify build take?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Most builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How fast approvals come back is the single biggest factor in which end of that range you land on.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '70px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Do you guarantee a return on ad spend?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>No, and be careful with anyone who does. Return depends on your product, pricing, margins, stock, shipping times, competitors and platform policy — things we influence but don't control. What we commit to is telling you exactly what we did, what the numbers did, and what we're changing.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How long does SEO take to work?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Technical improvements register within two to six weeks. Meaningful ranking and traffic movement takes three to six months, sometimes longer in a competitive category. Search engines have to recrawl, reassess and then trust a site before they move it. Anyone promising faster is describing something that doesn't happen.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Why do paid ads take 60 to 90 days to judge?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Google and Meta both need conversion data before their systems can identify who's likely to buy. On a new account with no history, the algorithm is genuinely guessing, so the first 30 to 60 days are volatile by design. Cost per sale stabilises after that.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Who owns the website and accounts you build?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could take all of it elsewhere tomorrow without asking us for anything.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>What are AEO and GEO, and do I need them?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Search has split into three surfaces. SEO is being found on a results page. AEO is being the source quoted in the answer box. GEO is being cited when someone asks ChatGPT or Perplexity and never sees a results page. All three matter now; most stores are set up only for the first.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Do you work with brands outside India?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Yes. Most of our work is with brands in the United States, United Kingdom, Belgium, the Netherlands and Australia. We're based in Bengaluru, which puts our working day across the US morning and the whole UK afternoon.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Can you work with our existing theme, or do you rebuild?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. We'll tell you honestly if a rebuild is genuinely the right call.</p></div></div></div>
-            <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How do I cancel if it isn't working?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Any monthly service can be cancelled on 30 days' notice, for any reason, without penalty. We'll ask why, but you don't have to tell us. One-time work is paid half up front and half on completion, so you're never more than half exposed on work not yet delivered.</p></div></div></div>
+          <div className="faq-item is-open" data-anim style={{ '--ay': '60px' }}><button className="faq-item__btn" type="button" aria-expanded="true"><h3>What does an ecommerce growth agency do?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>An ecommerce growth agency improves the three things that drive online revenue: the store itself, the traffic that reaches it, and how many visitors buy and come back. Trinity Deck does all three with one team — Shopify development, SEO, AEO, GEO, Google and Meta ads, conversion rate optimisation and retention marketing.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '65px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How much does it cost to work with a Shopify growth agency?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>It depends on what your store needs, so we don't publish packages. After a free teardown we send a written scope listing the work, the order we'd do it in and the dates. Nothing starts until you approve it, and nothing in it changes without your written agreement.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '70px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How long does a Shopify store build take?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Most Shopify builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How quickly approvals come back is the biggest factor in which end of that range you land on.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Can you work with my existing Shopify theme, or do you rebuild?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. If a rebuild is genuinely the right call, we'll tell you why.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>How long does ecommerce SEO take to show results?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Technical fixes usually register within two to six weeks. Meaningful ranking and traffic growth takes three to six months, longer in competitive categories, because search engines have to recrawl, reassess and trust a site before they move it. Anyone promising faster is describing something that doesn't happen.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>What are AEO and GEO, and does my store need them?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>AEO (answer engine optimisation) gets your store quoted in Google's answer box. GEO (generative engine optimisation) gets your brand cited when someone asks ChatGPT, Perplexity or Gemini for a recommendation. Buyers now use all three surfaces alongside normal search, and most stores are only set up for the first.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Why do Google and Meta ads take 60 to 90 days to judge?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Both platforms need conversion data before their systems can work out who is likely to buy. On a new account the algorithm is effectively guessing, so the first 30 to 60 days are volatile by design. Cost per sale usually stabilises after that, which is when results can be judged fairly.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Do you guarantee a return on ad spend?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>No, and be wary of anyone who does. Return on ad spend depends on your product, pricing, margins, stock, shipping times, competitors and platform policy — things we influence but don't control. What we commit to is showing you exactly what we did, what the numbers did, and what we're changing next.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Who owns the website, ad accounts and data you set up?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could move everything to another team tomorrow without asking us for anything.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>What is a free store teardown?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>A recorded ten-minute review of your store. We point out three specific things costing you orders and one you can fix yourself without us. It's free, it doesn't commit you to anything, and we only look at what's publicly visible on your site.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Do you work with ecommerce brands outside India?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Yes. Most of our work is with brands in the United States, United Kingdom, Belgium, the Netherlands and Australia. We're based in Bengaluru, which puts our working day across the US morning and the whole UK afternoon.</p></div></div></div>
+          <div className="faq-item" data-anim style={{ '--ay': '75px' }}><button className="faq-item__btn" type="button" aria-expanded="false"><h3>Can I stop working with you at any time?</h3><span className="faq-item__icon" aria-hidden="true"></span></button><div className="faq-item__panel"><div><p>Yes. Ongoing work can be stopped with 30 days' notice, for any reason and without a penalty. We'll ask why, but you don't have to tell us. Project work is paid half up front and half on completion, so you're never far ahead of what you've received.</p></div></div></div>
           </div>
         </div>
       </section>

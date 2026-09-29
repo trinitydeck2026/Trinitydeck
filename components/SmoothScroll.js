@@ -37,14 +37,14 @@ export default function SmoothScroll() {
     if (firstRun.current) { firstRun.current = false; return; }
     const lenis = lenisRef.current;
     if (!lenis) return;
-    // Wait a frame so this runs after Next.js's own scroll handling.
-    const id = requestAnimationFrame(() => {
+    // Wait until after Next.js's own scroll handling and the new page's first layout.
+    const id = setTimeout(() => {
       lenis.resize();
       const target = window.location.hash ? document.querySelector(window.location.hash) : null;
       if (target) lenis.scrollTo(target, { offset: -100, immediate: true, force: true });
       else lenis.scrollTo(0, { immediate: true, force: true });
-    });
-    return () => cancelAnimationFrame(id);
+    }, 60);
+    return () => clearTimeout(id);
   }, [pathname]);
 
   return null;

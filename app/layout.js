@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import SmoothScroll from "@/components/SmoothScroll";
+import ConsentBanner from "@/components/ConsentBanner";
 import "./globals.css";
 
 const urbanist = localFont({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
       <body>
         <SmoothScroll />
         {children}
+        <ConsentBanner />
       </body>
     </html>
   );

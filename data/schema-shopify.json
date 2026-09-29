@@ -148,42 +148,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can you work with our existing theme, or do you rebuild?",
+          "name": "Can you work with my existing Shopify theme, or do you rebuild?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. We'll tell you honestly if a rebuild is genuinely the right call."
+            "text": "We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. If a rebuild is genuinely the right call, we'll tell you why."
           }
         },
         {
           "@type": "Question",
-          "name": "How much does a Shopify store build cost?",
+          "name": "How much does it cost to work with a Shopify growth agency?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Builds start from around £1,500 for a focused store and rise with page count, product count and integrations. The number moves on scope, not on hours. We quote a fixed price and a fixed date before any work starts, and we don't change either without your written approval."
+            "text": "It depends on what your store needs, so we don't publish packages. After a free teardown we send a written scope listing the work, the order we'd do it in and the dates. Nothing starts until you approve it, and nothing in it changes without your written agreement."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does a Shopify build take?",
+          "name": "How long does a Shopify store build take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How fast approvals come back is the single biggest factor in which end of that range you land on."
+            "text": "Most Shopify builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How quickly approvals come back is the biggest factor in which end of that range you land on."
           }
         },
         {
           "@type": "Question",
-          "name": "Who owns the website and accounts you build?",
+          "name": "Who owns the website, ad accounts and data you set up?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could take all of it elsewhere tomorrow without asking us for anything."
+            "text": "You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could move everything to another team tomorrow without asking us for anything."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I cancel if it isn't working?",
+          "name": "Can I stop working with you at any time?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Any monthly service can be cancelled on 30 days' notice, for any reason, without penalty. We'll ask why, but you don't have to tell us. One-time work is paid half up front and half on completion, so you're never more than half exposed on work not yet delivered."
+            "text": "Yes. Ongoing work can be stopped with 30 days' notice, for any reason and without a penalty. We'll ask why, but you don't have to tell us. Project work is paid half up front and half on completion, so you're never far ahead of what you've received."
           }
         }
       ]

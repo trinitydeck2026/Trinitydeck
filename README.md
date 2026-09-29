@@ -28,17 +28,15 @@ Smooth scrolling uses Lenis and is switched off for visitors who prefer reduced 
 
 ## Before launch
 
-Set in `lib/config.js`. Anything left empty is not rendered, so there are no dead links:
+Set in `lib/config.js` (an empty value is never shown as a link):
 
-- Phone number and WhatsApp number (contact details block)
-- Social profile URLs (footer)
-- Founder LinkedIn / X / GitHub / portfolio links (team cards)
+- `phone` — official number, full international format (optional)
+- `social` — Facebook, Instagram, LinkedIn, X and WhatsApp profile URLs for the footer buttons
+- `tracking` — GA4, Google Ads, Microsoft Clarity and Meta Pixel IDs. Each loads only after the visitor accepts that category in the cookie banner.
 
-Edit directly:
+Also:
 
-- `[FOUNDER 2 NAME]` and `[FOUNDER 3 NAME]` — team cards in `app/page.js` and the Person entries in `data/schema-home.json`
-- Founder photographs — replace the initials in `.avatar` with an image
-- Case study results — the two cards in the Work section show "before" figures only, until after-figures are measured
-- Client quote — left out on purpose, per the content document; add it when a real one exists
-- "Last updated" date in `components/Footer.js` — keep it current
-- `/privacy-policy`, `/cookie-policy`, `/terms` — the footer links to these pages; add them
+- Selected Work — replace the two anonymised cases with the portfolio case studies (development and marketing)
+- Tools — confirm the final tool list; Klaviyo, Microsoft Clarity and Google Merchant Center still use simple marks until their logo files are supplied
+- Legal pages (`app/privacy`, `app/cookies`, `app/terms`) — have them reviewed by a solicitor; update the entity wording once the LLP is registered; add your email platform to Privacy §5 when you start sending newsletters
+- "Last updated" dates in `components/Footer.js` and `components/Legal.js` — keep them current

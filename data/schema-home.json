@@ -257,18 +257,58 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does a Shopify store build cost?",
+          "name": "What does an ecommerce growth agency do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Builds start from around £1,500 for a focused store and rise with page count, product count and integrations. The number moves on scope, not on hours. We quote a fixed price and a fixed date before any work starts, and we don't change either without your written approval."
+            "text": "An ecommerce growth agency improves the three things that drive online revenue: the store itself, the traffic that reaches it, and how many visitors buy and come back. Trinity Deck does all three with one team — Shopify development, SEO, AEO, GEO, Google and Meta ads, conversion rate optimisation and retention marketing."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does a Shopify build take?",
+          "name": "How much does it cost to work with a Shopify growth agency?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How fast approvals come back is the single biggest factor in which end of that range you land on."
+            "text": "It depends on what your store needs, so we don't publish packages. After a free teardown we send a written scope listing the work, the order we'd do it in and the dates. Nothing starts until you approve it, and nothing in it changes without your written agreement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a Shopify store build take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Shopify builds ship in seven to fifteen working days from the day we have all your content and access. The clock starts then, not at signature. How quickly approvals come back is the biggest factor in which end of that range you land on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work with my existing Shopify theme, or do you rebuild?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. If a rebuild is genuinely the right call, we'll tell you why."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does ecommerce SEO take to show results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Technical fixes usually register within two to six weeks. Meaningful ranking and traffic growth takes three to six months, longer in competitive categories, because search engines have to recrawl, reassess and trust a site before they move it. Anyone promising faster is describing something that doesn't happen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are AEO and GEO, and does my store need them?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO (answer engine optimisation) gets your store quoted in Google's answer box. GEO (generative engine optimisation) gets your brand cited when someone asks ChatGPT, Perplexity or Gemini for a recommendation. Buyers now use all three surfaces alongside normal search, and most stores are only set up for the first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do Google and Meta ads take 60 to 90 days to judge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both platforms need conversion data before their systems can work out who is likely to buy. On a new account the algorithm is effectively guessing, so the first 30 to 60 days are volatile by design. Cost per sale usually stabilises after that, which is when results can be judged fairly."
           }
         },
         {
@@ -276,44 +316,28 @@
           "name": "Do you guarantee a return on ad spend?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, and be careful with anyone who does. Return depends on your product, pricing, margins, stock, shipping times, competitors and platform policy — things we influence but don't control. What we commit to is telling you exactly what we did, what the numbers did, and what we're changing."
+            "text": "No, and be wary of anyone who does. Return on ad spend depends on your product, pricing, margins, stock, shipping times, competitors and platform policy — things we influence but don't control. What we commit to is showing you exactly what we did, what the numbers did, and what we're changing next."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does SEO take to work?",
+          "name": "Who owns the website, ad accounts and data you set up?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Technical improvements register within two to six weeks. Meaningful ranking and traffic movement takes three to six months, sometimes longer in a competitive category. Search engines have to recrawl, reassess and then trust a site before they move it. Anyone promising faster is describing something that doesn't happen."
+            "text": "You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could move everything to another team tomorrow without asking us for anything."
           }
         },
         {
           "@type": "Question",
-          "name": "Why do paid ads take 60 to 90 days to judge?",
+          "name": "What is a free store teardown?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Google and Meta both need conversion data before their systems can identify who's likely to buy. On a new account with no history, the algorithm is genuinely guessing, so the first 30 to 60 days are volatile by design. Cost per sale stabilises after that."
+            "text": "A recorded ten-minute review of your store. We point out three specific things costing you orders and one you can fix yourself without us. It's free, it doesn't commit you to anything, and we only look at what's publicly visible on your site."
           }
         },
         {
           "@type": "Question",
-          "name": "Who owns the website and accounts you build?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You do, entirely. Every account is created in your name, nothing is locked to our email, and handover includes full documentation and a recorded walkthrough. You could take all of it elsewhere tomorrow without asking us for anything."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are AEO and GEO, and do I need them?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Search has split into three surfaces. SEO is being found on a results page. AEO is being the source quoted in the answer box. GEO is being cited when someone asks ChatGPT or Perplexity and never sees a results page. All three matter now; most stores are set up only for the first."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with brands outside India?",
+          "name": "Do you work with ecommerce brands outside India?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Most of our work is with brands in the United States, United Kingdom, Belgium, the Netherlands and Australia. We're based in Bengaluru, which puts our working day across the US morning and the whole UK afternoon."
@@ -321,18 +345,10 @@
         },
         {
           "@type": "Question",
-          "name": "Can you work with our existing theme, or do you rebuild?",
+          "name": "Can I stop working with you at any time?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We work inside your existing theme wherever it's sound. Replacing a working theme is usually the expensive answer to a cheap problem, and a clean theme is often what your page speed depends on. We'll tell you honestly if a rebuild is genuinely the right call."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I cancel if it isn't working?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Any monthly service can be cancelled on 30 days' notice, for any reason, without penalty. We'll ask why, but you don't have to tell us. One-time work is paid half up front and half on completion, so you're never more than half exposed on work not yet delivered."
+            "text": "Yes. Ongoing work can be stopped with 30 days' notice, for any reason and without a penalty. We'll ask why, but you don't have to tell us. Project work is paid half up front and half on completion, so you're never far ahead of what you've received."
           }
         }
       ]
@@ -362,36 +378,6 @@
           "text": "Turn visits into revenue that returns. Conversion rate optimisation on real session data, and the lifecycle flows that make the second purchase happen by itself."
         }
       ]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.trinitydeck.com/#sandeep-halemani",
-      "name": "Sandeep Halemani",
-      "jobTitle": "Co-Founder — Growth",
-      "description": "Search, AI answers, paid media, conversion and retention.",
-      "worksFor": {
-        "@id": "https://www.trinitydeck.com/#organization"
-      }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.trinitydeck.com/#founder-2",
-      "name": "[FOUNDER 2 NAME]",
-      "jobTitle": "Co-Founder — Systems & AI",
-      "description": "Shopify architecture, integrations, automation and measurement.",
-      "worksFor": {
-        "@id": "https://www.trinitydeck.com/#organization"
-      }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.trinitydeck.com/#founder-3",
-      "name": "[FOUNDER 3 NAME]",
-      "jobTitle": "Co-Founder — Product Engineering",
-      "description": "Web and app development, performance and front-end.",
-      "worksFor": {
-        "@id": "https://www.trinitydeck.com/#organization"
-      }
     }
   ]
 }
