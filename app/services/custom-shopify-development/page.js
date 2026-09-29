@@ -256,7 +256,7 @@ export default function CustomShopifyDevelopmentPage() {
         </div>
       </section>
 
-        <Contact defaultNeed="Fixing an existing store" />
+        <Contact />
       </main>
       <Footer page="service" />
       <SiteEffects />

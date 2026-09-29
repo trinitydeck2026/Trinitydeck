@@ -18,8 +18,8 @@ Deploys to Vercel as-is (framework preset: Next.js).
 | `app/services/custom-shopify-development/page.js` | Service page |
 | `app/layout.js` | Root layout: Urbanist font (next/font), smooth scrolling |
 | `app/globals.css` | Design system and every section's styles |
-| `components/` | Nav, Contact (Cal.com + form), Footer, FounderLinks, SmoothScroll, SiteEffects |
-| `lib/site.js` | All page interactions: reveals, accordions, sliders, case cards, hub lines, globe, clocks, counters, Cal.com, form. Re-initialised on every page, cleaned up on leave |
+| `components/` | Nav, Contact (Cal.com booking), Footer, FounderLinks, SmoothScroll, SiteEffects |
+| `lib/site.js` | All page interactions: reveals, accordions, sliders, case cards, hub lines, globe, clocks, counters, Cal.com. Re-initialised on every page, cleaned up on leave |
 | `lib/config.js` | **Placeholders — fill these before launch** |
 | `data/schema-*.json` | JSON-LD for each page (Organization, Services, FAQPage, HowTo, Person, BreadcrumbList) |
 | `public/` | `robots.txt`, `llms.txt`, `sitemap.xml`, `og-image.jpg`, `logo.png`, icons and images |
@@ -33,7 +33,6 @@ Set in `lib/config.js`. Anything left empty is not rendered, so there are no dea
 - Phone number and WhatsApp number (contact details block)
 - Social profile URLs (footer)
 - Founder LinkedIn / X / GitHub / portfolio links (team cards)
-- `formEndpoint` — where the contact form posts. Without it, the form opens the visitor's email app addressed to contact@trinitydeck.com.
 
 Edit directly:
 

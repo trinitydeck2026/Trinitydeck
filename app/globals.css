@@ -903,7 +903,15 @@ html:not(.js) [data-anim], html:not(.js) .rise > span, html:not(.js) .load-in { 
 .contact__head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; }
 .contact__sub { font-size: 18px; line-height: 27px; color: var(--ink); max-width: 520px; }
 .contact__sub span { display: block; margin-top: 10px; color: var(--muted-2); }
-.contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 52px; }
+/* One booking card: short intro on the left, the Cal.com calendar (which collects every detail) on the right */
+.book { display: grid; grid-template-columns: minmax(260px, 340px) minmax(0, 1fr); gap: 36px; margin-top: 52px; align-items: start; }
+.book__intro { display: flex; flex-direction: column; gap: 22px; position: sticky; top: 120px; }
+.book__facts { display: grid; gap: 10px; }
+.book__fact { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 18px; background: #fff; box-shadow: var(--sh-btn-light); font-weight: 600; font-size: 15px; line-height: 20px; }
+.book__fact span { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; flex: none; background: var(--dark); color: #fff; box-shadow: var(--sh-btn-dark-sm); }
+.book__fact .ic { width: 16px; height: 16px; }
+.book .cal-shell { margin-top: 0; min-height: 640px; }
+.book #my-cal-inline-30min { min-height: 640px; }
 .c-card { border-radius: var(--r-xl); background: rgba(245,245,245,.92); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: var(--sh-card); padding: 38px; }
 .c-card__title { font-size: 32px; line-height: 40px; font-weight: 600; letter-spacing: -.01em; }
 .c-card__text { margin-top: 8px; color: var(--muted-2); font-size: 16px; line-height: 24px; }
@@ -918,28 +926,6 @@ html:not(.js) [data-anim], html:not(.js) .rise > span, html:not(.js) .load-in { 
 .cal-fallback { margin-top: 16px; font-size: 14px; color: var(--muted-2); }
 .cal-fallback a { color: var(--ink); font-weight: 600; }
 
-.form { display: grid; gap: 22px; margin-top: 28px; }
-.field { display: grid; gap: 6px; }
-.field label { font-weight: 700; font-size: 14px; }
-.field label span { color: var(--muted-3); font-weight: 600; }
-.field input, .field select, .field textarea {
-  width: 100%; border: 0; border-bottom: 1px solid var(--line-2); background: transparent; padding: 10px 0 12px;
-  font-size: 16px; outline: none; border-radius: 0; transition: border-color .3s;
-}
-.field textarea { resize: vertical; min-height: 110px; }
-.field select { appearance: none; -webkit-appearance: none; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%2371717a' stroke-width='1.6'><path d='M1 1l5 5 5-5'/></svg>") right 4px center no-repeat; cursor: pointer; }
-.field input::placeholder, .field textarea::placeholder { color: var(--muted-3); }
-.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); }
-.field.has-error input, .field.has-error select { border-color: #e11d48; }
-.field__err { font-size: 12px; color: #e11d48; min-height: 0; }
-.form__foot { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 6px; }
-.form__note { font-size: 14px; line-height: 20px; color: var(--muted-2); max-width: 260px; }
-.form-success { display: none; padding: 26px; border-radius: 24px; background: #fff; box-shadow: var(--sh-card-soft); margin-top: 28px; }
-.form-success .tick { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: #fff; box-shadow: var(--sh-accent); }
-.form-success p { margin-top: 16px; font-size: 20px; line-height: 28px; font-weight: 600; }
-.is-sent .form { display: none; }
-.is-sent .form-success { display: block; animation: popIn .6s var(--spring); }
-@keyframes popIn { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
 
 .details { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 20px; }
 .detail { display: flex; gap: 14px; align-items: flex-start; padding: 16px; border-radius: 24px; background: rgba(245,245,245,.8); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: var(--sh-card-soft); }
@@ -1051,7 +1037,8 @@ html:not(.js) [data-anim], html:not(.js) .rise > span, html:not(.js) .load-in { 
   .results__divider { display: none; }
   .plan__body { grid-template-columns: 1fr; }
   .plans { grid-template-columns: 1fr; }
-  .contact__head, .contact__grid { grid-template-columns: 1fr; }
+  .contact__head, .book { grid-template-columns: 1fr; }
+  .book__intro { position: static; }
   .incl-grid { grid-template-columns: 1fr 1fr; }
   .svc-intro { grid-template-columns: 1fr; gap: 24px; }
   .next-svc { grid-template-columns: 1fr 1fr; }
