@@ -54,7 +54,7 @@ export default function Contact() {
         <div className="details">
           <div className="detail" data-anim style={{ "--ay": "60px" }}><span className="detail__ic"><Icon name="i-mail" /></span><div className="detail__text"><b>Email</b><a href={`mailto:${config.contactEmail}`}>{config.contactEmail}</a></div></div>
           {phone && (
-            <div className="detail" data-anim style={{ "--ay": "65px" }}><span className="detail__ic"><Icon name="i-phone" /></span><div className="detail__text"><b>Phone</b><a href={`tel:${phone.replace(/[^\d+]/g, "")}`}>{phone}</a></div></div>
+            <div className="detail" data-anim style={{ "--ay": "65px" }}><span className="detail__ic"><Icon name="i-phone" /></span><div className="detail__text"><b>Phone / WhatsApp</b><a href={`tel:${phone.replace(/[^\d+]/g, "")}`}>{phone}</a></div></div>
           )}
           <div className="detail" data-anim style={{ "--ay": "70px" }}><span className="detail__ic"><Icon name="i-map-pin" /></span><div className="detail__text"><b>Address</b><span>Sector 6, HSR Layout, Bengaluru, Karnataka 560068, India</span></div></div>
           <div className="detail" data-anim style={{ "--ay": "75px" }}><span className="detail__ic"><Icon name="i-clock" /></span><div className="detail__text"><b>Hours</b><span>Monday to Friday, 9:00 to 18:00 IST</span></div></div>

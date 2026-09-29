@@ -45,7 +45,8 @@
             "NL",
             "AU",
             "IN"
-          ]
+          ],
+          "telephone": "+917026308026"
         }
       ],
       "knowsAbout": [
@@ -142,7 +143,16 @@
             }
           }
         ]
-      }
+      },
+      "sameAs": [
+        "https://www.facebook.com/trinitydeckofficial/",
+        "https://www.instagram.com/trinitydeckofficial/",
+        "https://www.linkedin.com/company/trinitydeckofficial",
+        "https://x.com/trinitydeckofcl",
+        "https://www.youtube.com/@TrinityDeckOfficial",
+        "https://www.reddit.com/user/trinitydeckofficial/"
+      ],
+      "telephone": "+917026308026"
     },
     {
       "@type": "WebSite",

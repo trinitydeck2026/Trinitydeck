@@ -30,8 +30,8 @@ Smooth scrolling uses Lenis and is switched off for visitors who prefer reduced 
 
 Set in `lib/config.js` (an empty value is never shown as a link):
 
-- `phone` — official number, full international format (optional)
-- `social` — Facebook, Instagram, LinkedIn, X and WhatsApp profile URLs for the footer buttons
+- `phone` — official phone / WhatsApp number (+91 70263 08026)
+- `social` — official profile URLs (Facebook, Instagram, LinkedIn, X, YouTube, Reddit, WhatsApp) for the footer buttons
 - `tracking` — GA4, Google Ads, Microsoft Clarity and Meta Pixel IDs. Each loads only after the visitor accepts that category in the cookie banner.
 
 Also:

@@ -8,6 +8,8 @@ const SOCIALS = [
   ["instagram", "Instagram", "l-instagram"],
   ["linkedin", "LinkedIn", "l-linkedin"],
   ["x", "X", "l-x"],
+  ["youtube", "YouTube", "l-youtube"],
+  ["reddit", "Reddit", "l-reddit"],
   ["whatsapp", "WhatsApp", "l-whatsapp"],
 ];
 
@@ -35,7 +37,7 @@ export default function Footer({ page = "home" }) {
             })}
             <a className="soc-btn" href={`mailto:${config.contactEmail}`}>Email <span><Icon name="i-mail" /></span></a>
           </div>
-          <p className="footer__entity">Trinity Deck · Sector 6, HSR Layout, Bengaluru, Karnataka 560068, India · <a href={`mailto:${config.contactEmail}`}>{config.contactEmail}</a></p>
+          <p className="footer__entity">Trinity Deck · Sector 6, HSR Layout, Bengaluru, Karnataka 560068, India · <a href={`mailto:${config.contactEmail}`}>{config.contactEmail}</a> · <a href={`tel:${config.phone.replace(/[^\d+]/g, "")}`}>{config.phone}</a></p>
         </div>
         <div className="footer__bar">
           <nav className="footer__nav" aria-label="Footer">
