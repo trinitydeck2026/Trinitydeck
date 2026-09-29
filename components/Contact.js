@@ -39,15 +39,15 @@ export default function Contact() {
         </div>
 
         <div className="details">
-          <div className="detail" data-anim style={{ "--ay": "60px" }}><span className="detail__ic"><Icon name="i-mail" /></span><div><b>Email</b><a href={`mailto:${config.contactEmail}`}>{config.contactEmail}</a></div></div>
+          <div className="detail" data-anim style={{ "--ay": "60px" }}><span className="detail__ic"><Icon name="i-mail" /></span><div className="detail__text"><b>Email</b><a href={`mailto:${config.contactEmail}`}>{config.contactEmail}</a></div></div>
           {phone && (
-            <div className="detail" data-anim style={{ "--ay": "65px" }}><span className="detail__ic"><Icon name="i-phone" /></span><div><b>Phone</b><a href={`tel:${phone.replace(/[^\d+]/g, "")}`}>{phone}</a></div></div>
+            <div className="detail" data-anim style={{ "--ay": "65px" }}><span className="detail__ic"><Icon name="i-phone" /></span><div className="detail__text"><b>Phone</b><a href={`tel:${phone.replace(/[^\d+]/g, "")}`}>{phone}</a></div></div>
           )}
           {whatsapp && (
-            <div className="detail" data-anim style={{ "--ay": "65px" }}><span className="detail__ic"><Icon name="b-whatsapp" className="ic c-wa" /></span><div><b>WhatsApp</b><a href={`https://wa.me/${whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener">{whatsapp}</a></div></div>
+            <div className="detail" data-anim style={{ "--ay": "65px" }}><span className="detail__ic"><Icon name="b-whatsapp" className="ic c-wa" /></span><div className="detail__text"><b>WhatsApp</b><a href={`https://wa.me/${whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener">{whatsapp}</a></div></div>
           )}
-          <div className="detail" data-anim style={{ "--ay": "70px" }}><span className="detail__ic"><Icon name="i-map-pin" /></span><div><b>Address</b><span>Sector 6, HSR Layout, Bengaluru, Karnataka 560068, India</span></div></div>
-          <div className="detail" data-anim style={{ "--ay": "75px" }}><span className="detail__ic"><Icon name="i-clock" /></span><div><b>Hours</b><span>Monday to Friday, 9:00 to 18:00 IST</span></div></div>
+          <div className="detail" data-anim style={{ "--ay": "70px" }}><span className="detail__ic"><Icon name="i-map-pin" /></span><div className="detail__text"><b>Address</b><span>Sector 6, HSR Layout, Bengaluru, Karnataka 560068, India</span></div></div>
+          <div className="detail" data-anim style={{ "--ay": "75px" }}><span className="detail__ic"><Icon name="i-clock" /></span><div className="detail__text"><b>Hours</b><span>Monday to Friday, 9:00 to 18:00 IST</span></div></div>
         </div>
       </div>
     </section>

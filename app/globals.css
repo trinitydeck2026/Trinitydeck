@@ -932,9 +932,9 @@ html:not(.js) [data-anim], html:not(.js) .rise > span, html:not(.js) .load-in { 
 .detail__ic { width: 48px; height: 48px; border-radius: 14px; background: #fff; display: grid; place-items: center; flex: none; box-shadow: var(--sh-btn-light); }
 .detail__ic .ic { width: 20px; height: 20px; }
 .detail b { display: block; font-size: 15px; font-weight: 700; }
-.detail span, .detail a { display: block; font-size: 15px; line-height: 21px; color: var(--ink); margin-top: 2px; word-break: break-word; }
-.detail a { background: linear-gradient(var(--accent), var(--accent)) 0 100% / 0 1px no-repeat; transition: background-size .4s var(--ease-out); width: fit-content; }
-.detail a:hover { background-size: 100% 1px; }
+.detail__text span, .detail__text a { display: block; font-size: 15px; line-height: 21px; color: var(--ink); margin-top: 2px; word-break: break-word; }
+.detail__text a { background: linear-gradient(var(--accent), var(--accent)) 0 100% / 0 1px no-repeat; transition: background-size .4s var(--ease-out); width: fit-content; }
+.detail__text a:hover { background-size: 100% 1px; }
 
 /* ==========================================================================
    Footer
