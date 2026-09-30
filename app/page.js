@@ -129,14 +129,38 @@ export default function HomePage() {
             <p className="strip__label" data-anim>Built on the platforms you already run</p>
             <div className="marquee" data-anim="fade">
               <div className="marquee__track">
-                <span className="logo-item"><svg className="c-shopify" aria-hidden="true"><use href="/assets/icons.svg#l-shopify"/></svg>Shopify</span>
-                <span className="logo-item"><svg className="c-gads" aria-hidden="true"><use href="/assets/icons.svg#l-googleads"/></svg>Google Ads</span>
-                <span className="logo-item"><svg className="c-meta" aria-hidden="true"><use href="/assets/icons.svg#l-meta"/></svg>Meta</span>
-                <span className="logo-item"><svg className="c-ga" aria-hidden="true"><use href="/assets/icons.svg#l-googleanalytics"/></svg>Google Analytics 4</span>
-                <span className="logo-item"><svg className="c-gtm" aria-hidden="true"><use href="/assets/icons.svg#l-googletagmanager"/></svg>Google Tag Manager</span>
-                <span className="logo-item"><svg className="c-klaviyo" aria-hidden="true"><use href="/assets/icons.svg#b-klaviyo"/></svg>Klaviyo</span>
-                <span className="logo-item"><svg className="c-merchant" aria-hidden="true"><use href="/assets/icons.svg#b-merchant"/></svg>Google Merchant Center</span>
-                <span className="logo-item"><svg className="c-clarity" aria-hidden="true"><use href="/assets/icons.svg#b-clarity"/></svg>Microsoft Clarity</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-meta"/></svg>Meta Ads</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googleads"/></svg>Google Ads</span>
+                <span className="logo-item logo-item--text">Microsoft Clarity</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googleanalytics"/></svg>Google Analytics 4</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googlesearchconsole"/></svg>Google Search Console</span>
+                <span className="logo-item logo-item--text">Google Merchant Center</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-shopify"/></svg>Shopify</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googletagmanager"/></svg>Google Tag Manager</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-whatsapp"/></svg>WhatsApp</span>
+                <span className="logo-item logo-item--text">AiSensy</span>
+                <span className="logo-item logo-item--text">Wati</span>
+                <span className="logo-item logo-item--text">WhatChimp</span>
+                <span className="logo-item logo-item--text">Klaviyo</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-brevo"/></svg>Brevo</span>
+                <span className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-mailchimp"/></svg>Mailchimp</span>
+                <span className="logo-item logo-item--text">Omnisend</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-meta"/></svg>Meta Ads</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googleads"/></svg>Google Ads</span>
+                <span aria-hidden="true" className="logo-item logo-item--text">Microsoft Clarity</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googleanalytics"/></svg>Google Analytics 4</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googlesearchconsole"/></svg>Google Search Console</span>
+                <span aria-hidden="true" className="logo-item logo-item--text">Google Merchant Center</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-shopify"/></svg>Shopify</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-googletagmanager"/></svg>Google Tag Manager</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-whatsapp"/></svg>WhatsApp</span>
+                <span aria-hidden="true" className="logo-item logo-item--text">AiSensy</span>
+                <span aria-hidden="true" className="logo-item logo-item--text">Wati</span>
+                <span aria-hidden="true" className="logo-item logo-item--text">WhatChimp</span>
+                <span aria-hidden="true" className="logo-item logo-item--text">Klaviyo</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-brevo"/></svg>Brevo</span>
+                <span aria-hidden="true" className="logo-item"><svg aria-hidden="true"><use href="/assets/icons.svg#l-mailchimp"/></svg>Mailchimp</span>
+                <span aria-hidden="true" className="logo-item logo-item--text">Omnisend</span>
               </div>
             </div>
           </div>
@@ -574,7 +598,7 @@ export default function HomePage() {
         <div className="container">
           <div className="tools__stage">
             <div className="float-tile" style={{ left: '2%', top: '4%', '--rot': '-18deg', '--bd': '-1s' }} data-depth="30"><div><svg className="c-shopify"><use href="/assets/icons.svg#l-shopify"/></svg></div></div>
-            <div className="float-tile float-tile--sm" style={{ left: '-3%', top: '44%', '--rot': '12deg', '--bd': '-3s' }} data-depth="18"><div><svg className="c-klaviyo"><use href="/assets/icons.svg#b-klaviyo"/></svg></div></div>
+            <div className="float-tile float-tile--sm" style={{ left: '-3%', top: '44%', '--rot': '12deg', '--bd': '-3s' }} data-depth="18"><div><svg><use href="/assets/icons.svg#l-googletagmanager"/></svg></div></div>
             <div className="float-tile" style={{ left: '9%', top: '74%', '--rot': '-10deg', '--bd': '-5s' }} data-depth="24"><div><svg className="c-ga"><use href="/assets/icons.svg#l-googleanalytics"/></svg></div></div>
             <div className="float-tile float-tile--sm" style={{ right: '4%', top: '10%', '--rot': '14deg', '--bd': '-2s' }} data-depth="22"><div><svg className="c-meta"><use href="/assets/icons.svg#l-meta"/></svg></div></div>
             <div className="float-tile float-tile--sm" style={{ right: '-2%', top: '48%', '--rot': '-12deg', '--bd': '-4s' }} data-depth="16"><div><svg className="c-gads"><use href="/assets/icons.svg#l-googleads"/></svg></div></div>
@@ -587,16 +611,16 @@ export default function HomePage() {
           </div>
           </div>
           <ul className="tool-grid">
-            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg className="c-shopify"><use href="/assets/icons.svg#l-shopify"/></svg></span><div><b>Shopify</b><small>Store builds, themes, migrations</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg className="c-gads"><use href="/assets/icons.svg#l-googleads"/></svg></span><div><b>Google Ads</b><small>Search, Shopping and Performance Max</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}><span className="tool__ic"><svg className="c-meta"><use href="/assets/icons.svg#l-meta"/></svg></span><div><b>Meta Ads</b><small>Facebook and Instagram</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.15s' }}><span className="tool__ic"><svg className="c-merchant"><use href="/assets/icons.svg#b-merchant"/></svg></span><div><b>Google Merchant Center</b><small>Product feeds and free listings</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg className="c-ga"><use href="/assets/icons.svg#l-googleanalytics"/></svg></span><div><b>Google Analytics 4</b><small>Ecommerce events and reporting</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg className="c-gtm"><use href="/assets/icons.svg#l-googletagmanager"/></svg></span><div><b>Google Tag Manager</b><small>Tag management and server-side</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg className="c-gsc"><use href="/assets/icons.svg#l-googlesearchconsole"/></svg></span><div><b>Google Search Console</b><small>Indexing and search performance</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}><span className="tool__ic"><svg className="c-clarity"><use href="/assets/icons.svg#b-clarity"/></svg></span><div><b>Microsoft Clarity</b><small>Session recordings and heatmaps</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.15s' }}><span className="tool__ic"><svg className="c-klaviyo"><use href="/assets/icons.svg#b-klaviyo"/></svg></span><div><b>Klaviyo</b><small>Email and SMS lifecycle flows</small></div></li>
-            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg className="c-wa"><use href="/assets/icons.svg#l-whatsapp"/></svg></span><div><b>WhatsApp Business</b><small>Ordering agents and conversational commerce</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg><use href="/assets/icons.svg#l-meta"/></svg></span><div><b>Meta Ads</b><small>Facebook and Instagram</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg><use href="/assets/icons.svg#l-googleads"/></svg></span><div><b>Google Ads</b><small>Search, Shopping and Performance Max</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}><span className="tool__ic"><svg className="ic"><use href="/assets/icons.svg#i-mouse-pointer-click"/></svg></span><div><b>Microsoft Clarity</b><small>Session recordings and heatmaps</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.15s' }}><span className="tool__ic"><svg><use href="/assets/icons.svg#l-googleanalytics"/></svg></span><div><b>Google Analytics 4</b><small>Ecommerce events and reporting</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg><use href="/assets/icons.svg#l-googlesearchconsole"/></svg></span><div><b>Google Search Console</b><small>Indexing and search performance</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px' }}><span className="tool__ic"><svg className="ic"><use href="/assets/icons.svg#i-store"/></svg></span><div><b>Google Merchant Center</b><small>Product feeds and free listings</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.05s' }}><span className="tool__ic"><svg><use href="/assets/icons.svg#l-shopify"/></svg></span><div><b>Shopify</b><small>Store builds, themes, migrations</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.1s' }}><span className="tool__ic"><svg><use href="/assets/icons.svg#l-googletagmanager"/></svg></span><div><b>Google Tag Manager</b><small>Tag management and server-side</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.15s' }}><span className="tool__ic"><svg><use href="/assets/icons.svg#l-whatsapp"/></svg></span><div><b>WhatsApp</b><small>AiSensy, Wati, WhatChimp and more</small></div></li>
+            <li className="tool" data-anim style={{ '--ay': '30px', '--ad': '.2s' }}><span className="tool__ic"><svg className="ic"><use href="/assets/icons.svg#i-mail"/></svg></span><div><b>Email marketing</b><small>Klaviyo, Brevo, Mailchimp, Omnisend</small></div></li>
           </ul>
         </div>
       </section>
@@ -656,36 +680,44 @@ export default function HomePage() {
         <section className="results" aria-labelledby="results-h">
           <div className="container">
             <div className="results__rule"></div>
-            <div className="results__grid">
+            <div className="results__head">
               <div>
                 <span className="badge badge--dark" data-anim>What changed</span>
                 <h2 className="h2" id="results-h" data-anim style={{ '--ay': '50px' }}><span className="grad-light">Numbers we can show you the working for</span></h2>
               </div>
-              <span className="results__divider" aria-hidden="true"></span>
-              <div data-stats>
-                <div className="stat-slider">
-                  <div className="stat-track">
-                    <div className="stat">
-                      <p className="stat__label">Build</p>
-                      <p className="stat__value"><span data-count="7">7</span> days</p>
-                      <p className="stat__text">Typical Shopify build, from content in hand to launch</p>
-                    </div>
-                    <div className="stat">
-                      <p className="stat__label">Measurement</p>
-                      <p className="stat__value"><span data-count="7">7</span> of 7</p>
-                      <p className="stat__text">Tracking platforms live and verified before any spend</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="stat-nav">
-                  <div className="stat-nav__arrows">
-                    <button className="arrow-btn arrow-btn--dark" type="button" data-stat-prev aria-label="Previous figure" disabled><svg className="ic"><use href="/assets/icons.svg#i-arrow-left"/></svg></button>
-                    <button className="arrow-btn arrow-btn--dark" type="button" data-stat-next aria-label="Next figure"><svg className="ic"><use href="/assets/icons.svg#i-arrow-right"/></svg></button>
-                  </div>
-                  <p className="stat-count"><span data-stat-i style={{ color: '#fff' }}>01</span> <span>/02</span></p>
-                </div>
-                <p className="results__honest"><svg className="ic"><use href="/assets/icons.svg#i-shield-check"/></svg>Only figures we can evidence on request. More go up once a full month of client data is in.</p>
-              </div>
+              <p className="results__honest" data-anim><svg className="ic"><use href="/assets/icons.svg#i-shield-check"/></svg>Only figures we can evidence on request. Client results go up once a full month of data is in.</p>
+            </div>
+            <div className="kpis">
+              <article className="kpi" data-anim style={{ '--ay': '40px' }}>
+                <span className="kpi__i">01</span>
+                <p className="kpi__value"><small>within</small><span className="kpi__num"><span data-count="14">14</span></span><em>days</em></p>
+                <h3 className="kpi__title">Shopify store build</h3>
+                <p className="kpi__text">From content in hand to a live store that can take orders.</p>
+              </article>
+              <article className="kpi" data-anim style={{ '--ay': '40px', '--ad': '.06s' }}>
+                <span className="kpi__i">02</span>
+                <p className="kpi__value"><span className="kpi__num"><span data-count="7">7</span> of 7</span></p>
+                <h3 className="kpi__title">Tracking platforms verified</h3>
+                <p className="kpi__text">Installed and checked with a real test purchase before any ad spend.</p>
+              </article>
+              <article className="kpi" data-anim style={{ '--ay': '40px', '--ad': '.12s' }}>
+                <span className="kpi__i">03</span>
+                <p className="kpi__value"><span className="kpi__num"><span data-count="3">3</span></span><em>surfaces</em></p>
+                <h3 className="kpi__title">Search coverage</h3>
+                <p className="kpi__text">Google results, the answer box and AI assistants, optimised together.</p>
+              </article>
+              <article className="kpi" data-anim style={{ '--ay': '40px', '--ad': '.18s' }}>
+                <span className="kpi__i">04</span>
+                <p className="kpi__value"><span className="kpi__num">2–3</span><em>weeks</em></p>
+                <h3 className="kpi__title">Foundation live</h3>
+                <p className="kpi__text">Catalogue, speed and tracking fixed before we scale your traffic.</p>
+              </article>
+              <article className="kpi" data-anim style={{ '--ay': '40px', '--ad': '.24s' }}>
+                <span className="kpi__i">05</span>
+                <p className="kpi__value"><span className="kpi__num"><span data-count="100">100</span>%</span></p>
+                <h3 className="kpi__title">Yours to keep</h3>
+                <p className="kpi__text">Every account, dataset and document in your name. Stop on 30 days' notice.</p>
+              </article>
             </div>
           </div>
         </section>
